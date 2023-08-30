@@ -10,14 +10,13 @@ export const metadata: Metadata = {
 		'成立背景, 万益能源, 创业初心, 使命愿景, 业务介绍, 万益实力, 合作生态, 社会责任',
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children, tab }: any) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				{children}
+				{tab}
+			</body>
 		</html>
 	);
 }

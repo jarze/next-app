@@ -4,7 +4,6 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"predev": "apollo dev",
 		"start": "next start",
 		"build:dev": "apollo dev && next build",
 		"build": "next build",
