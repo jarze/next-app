@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const config = require('./.apollo.json');
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	env: {
+		apiUrl: config.apiUrl,
+	},
+};
+
+module.exports = nextConfig;
