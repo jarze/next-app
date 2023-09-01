@@ -4,14 +4,13 @@
 
 @layer base {
   :root {
-    --color-primary: #00FFEE;
+    --color-primary-rgb: 0, 255, 238;
+    /* --color-primary: #00FFEE; */
   }
 }
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -9,7 +9,7 @@ const config: Config = {
 	],
 	theme: {
 		colors: {
-			primary: 'var(--color-primary)',
+			primary: 'rgba(var(--color-primary-rgb), <alpha-value>)',
 			...colors,
 		},
 		extend: {
