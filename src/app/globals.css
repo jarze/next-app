@@ -27,5 +27,40 @@ body {
 }
 
 #content {
-  background: url(/bg_border.svg) no-repeat left center / auto 100%;
+  /* min-width: 800px;
+  min-height: 400px; */
+  /* background:
+  content-box no-repeat left center / auto 100% url(/bg_border_l.svg),
+  no-repeat right center / auto 100% url(/bg_border_r.svg); */
+  /* background:
+    content-box no-repeat left center / auto 100% url(/bg_border_l.svg); */
+}
+
+#content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 100px;
+  background: content-box no-repeat left center / auto 100% url(/bg_border_l.svg);
+}
+
+#content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  background: no-repeat right center / auto 100% url(/bg_border_r.svg);
+}
+
+.home-button {
+  font-weight: 400;
+  color: rgb(var(--color-primary-rgb));
+  background: rgba(29, 36, 46, 0.52);
+  box-shadow: inset 0px 0px 32px 1px rgb(var(--color-primary-rgb));
+  border: 1px solid rgb(var(--color-primary-rgb));
 }

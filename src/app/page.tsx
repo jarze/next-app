@@ -4,33 +4,43 @@ import { routes as data } from '@/config';
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			<div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+		<main className='relative h-screen flex items-center justify-center text-[56px]'>
+			<div className='absolute h-[1080px] w-[1220px] flex flex-col justify-center items-center z-[-1]'>
 				<Image
-					className='fixed top-1/2 left-1/2 mt-[-225px] ml-[-165px] dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
+					src='/c_start.png'
+					alt='小益'
+					width={508}
+					height={528}
+					priority
+					className='absolute mt-[-215px] ml-[-300px] z-1'
+				/>
+				<Image
+					className='dark:drop-shadow-[0_0_0.3rem_#ffffff70] relative top-10'
 					src='/xiaoyi.svg'
 					alt='小益 Logo'
 					width={330}
 					height={450}
 					priority
 				/>
+				<Image
+					src='/bottom.png'
+					alt='小益'
+					width={1213}
+					height={1080}
+					className='absolute bottom-0 h-[1080px] z-[-1]'
+					priority
+				/>
 			</div>
-
-			<div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left'>
+			<div className='w-2/3 h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14'>
 				{data.map(i => (
-					<Link
-						key={i.title}
-						href={i.url}
-						className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-					>
-						<h2 className={`mb-3 text-2xl font-semibold text-primary`}>
-							{i.title}{' '}
-							<span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-								-&gt;
-							</span>
-						</h2>
-						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{i.title}</p>
-					</Link>
+					<div key={i.title}>
+						<Link
+							href={i.children?.[0]?.url || i.url}
+							className='home-button transition-colors inline-block px-24 py-4 whitespace-nowrap leading-normal'
+						>
+							{i.title}
+						</Link>
+					</div>
 				))}
 			</div>
 		</main>

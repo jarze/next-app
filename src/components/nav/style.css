@@ -1,0 +1,21 @@
+.nav-title {
+  background: no-repeat center bottom / auto 3px linear-gradient(to right, transparent 0%, rgb(var(--color-primary-rgb)) 50%, transparent 100%), rgba(var(--color-primary-rgb), 0.1);
+}
+
+.nav-button {
+  margin-bottom: 40px;
+  border-color: rgb(var(--color-primary-rgb));
+  border-style: solid;
+  border-width: 1px 1px 1px 8px;
+  font-size: 48px;
+  color: rgb(var(--color-primary-rgb));
+  line-height: 2.5em;
+	box-shadow: inset 0px 0px 32px 1px rgb(var(--color-primary-rgb));
+	background: rgba(29,36,46,0.52);
+}
+
+.nav-button:active, .nav-button[data-active='true'] {
+	background-color: rgb(var(--color-primary-rgb));
+	color: #030322;
+	box-shadow: 0px 0px 32px 1px #00FFEE;
+}
