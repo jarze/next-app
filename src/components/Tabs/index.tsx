@@ -1,4 +1,3 @@
-'use client';
 import TabsComps, { TTabsProp } from './Tabs';
 import Panel from './Panel';
 

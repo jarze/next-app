@@ -1,4 +1,3 @@
-'use client';
 import { ReactElement, useContext } from 'react';
 import TabsContext from './context';
 

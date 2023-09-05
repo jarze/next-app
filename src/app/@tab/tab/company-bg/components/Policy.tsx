@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import IconItem from './IconItem';
-import Card from './Card';
+import TabCard from '@/components/TabCard';
 
 export default function Policy() {
   return (
     <div className="flex flex-row">
-      <Card title={'电力改革前'}>
+      <TabCard title={'电力改革前'}>
         <div className="flex flex-row items-center justify-around px-10 mt-[80px]">
           <IconItem src={'/company/logo_generate.png'} text="发电企业" />
           <Image
@@ -34,8 +34,8 @@ export default function Policy() {
         <div className="w-[1001px] h-[82px] bg-[#FDAC32] m-auto mt-[40px] text-center leading-[82px] text-[30px]">
           电力用户没有选择权与议价权
         </div>
-      </Card>
-      <Card title={'电力改革后'} styles="w-[1690px] ml-[80px]">
+      </TabCard>
+      <TabCard title={'电力改革后'} styles="w-[1690px] ml-[80px]">
         <div className="flex flex-row items-center ml-[200px]">
           <div className="w-[701px] h-[502px] flex flex-col items-center border-dashed border-primary border">
             <div className="w-full relative flex flex-row items-center mt-10 pl-[192px]">
@@ -125,7 +125,7 @@ export default function Policy() {
             对于非市场化用户：提供输配售电服务和电网接入服务。
           </div>
         </div>
-      </Card>
+      </TabCard>
     </div>
   );
 }

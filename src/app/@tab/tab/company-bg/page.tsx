@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Policy from './components/Policy';
-import Tabs from './components/Tabs';
+import Tabs from '@/components/Tabs';
 
 export default function Page() {
   const [value, setValue] = useState('1');

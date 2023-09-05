@@ -1,4 +1,3 @@
-'use client';
 import React, { ReactElement, useMemo } from 'react';
 import TabItem from './TabItem';
 import TabsContext from './context';
