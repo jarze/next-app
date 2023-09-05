@@ -27,6 +27,25 @@ body {
   background: #010022;
 }
 
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+  /*水平滚动条的样式*/
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent; /*滚动条的背景颜色*/
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 #content {
   /* min-width: 800px;
   min-height: 400px; */
