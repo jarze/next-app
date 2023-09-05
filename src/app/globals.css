@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --color-primary-rgb: 0, 255, 238;
+    --color-button-bg: rgba(29, 36, 46, 0.52);
     /* --color-primary: #00FFEE; */
   }
 }
@@ -60,7 +61,13 @@ body {
 .home-button {
   font-weight: 400;
   color: rgb(var(--color-primary-rgb));
-  background: rgba(29, 36, 46, 0.52);
+  background: var(--color-button-bg);
   box-shadow: inset 0px 0px 32px 1px rgb(var(--color-primary-rgb));
   border: 1px solid rgb(var(--color-primary-rgb));
 }
+
+.home-button:active,.home-button[data-active='true'] {
+	background-color: rgb(var(--color-primary-rgb));
+	color: #030322;
+}
+

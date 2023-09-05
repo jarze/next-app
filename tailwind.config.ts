@@ -10,6 +10,7 @@ const config: Config = {
 	theme: {
 		colors: {
 			primary: 'rgba(var(--color-primary-rgb), <alpha-value>)',
+			bgButton: 'var(--color-button-bg)',
 			...colors,
 		},
 		extend: {
@@ -17,6 +18,8 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'bottom-line':
+					'linear-gradient(to bottom, rgb(var(--color-primary-rgb))',
 			},
 		},
 	},

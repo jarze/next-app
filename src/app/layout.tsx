@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Particles from '@/components/particles';
+import Svg from '@/components/rsvg';
 // import { Inter } from 'next/font/google';
 
 // const inter = Inter({ subsets: ['latin'] });
@@ -29,13 +30,14 @@ export default function RootLayout({ children, tab }: any) {
 					height={141}
 					className='fixed left-16 top-16 -z-10'
 				/>
-				<Image
+				<Svg src='/bg_lb.svg' className='fixed left-16 bottom-16 -z-10' />
+				{/* <Image
 					src='/bg_lb.svg'
 					alt='万益能源'
 					width={443}
 					height={141}
 					className='fixed left-16 bottom-16 -z-10 animate-pulse duration-75'
-				/>
+				/> */}
 				<Image
 					src='/bg_tr.svg'
 					alt='万益能源'

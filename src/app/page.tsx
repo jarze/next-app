@@ -1,6 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { routes as data } from '@/config';
+import Svg from '@/components/rsvg';
+
+const pathRelative: any = {
+	l_1: 'left-[418px] top-7',
+	r_1: 'right-[418px] top-7',
+	l_2: 'top-24',
+	r_2: 'top-24',
+	l_3: 'top-7',
+	r_3: 'top-7',
+};
 
 export default function Home() {
 	return (
@@ -32,16 +42,30 @@ export default function Home() {
 				/>
 			</div>
 			<div className='w-2/3 h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14'>
-				{data.map(i => (
-					<div key={i.title}>
-						<Link
-							href={i.children?.[0]?.url || i.url}
-							className='home-button transition-colors inline-block px-24 py-4 whitespace-nowrap leading-normal'
+				{data.map((i, index) => {
+					const loc = `${index % 2 ? 'r' : 'l'}_${Math.ceil((index + 1) / 2)}`;
+					return (
+						<div
+							key={i.title}
+							className={`flex items-start ${
+								index % 2 ? 'flex-row' : 'flex-row-reverse'
+							}`}
 						>
-							{i.title}
-						</Link>
-					</div>
-				))}
+							<Svg
+								src={`/line/${loc}.svg`}
+								className='max-w-full overflow-hidden'
+							/>
+							<Link
+								href={i.children?.[0]?.url || i.url}
+								className={`home-button transition-colors inline-block px-24 py-4 whitespace-nowrap leading-normal relative ${
+									pathRelative[loc] || ''
+								}`}
+							>
+								{i.title}
+							</Link>
+						</div>
+					);
+				})}
 			</div>
 		</main>
 	);

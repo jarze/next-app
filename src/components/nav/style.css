@@ -11,11 +11,11 @@
   color: rgb(var(--color-primary-rgb));
   line-height: 2.5em;
 	box-shadow: inset 0px 0px 32px 1px rgb(var(--color-primary-rgb));
-	background: rgba(29,36,46,0.52);
+	background: var(--color-button-bg, rgba(29,36,46,0.52));;
 }
 
 .nav-button:active, .nav-button[data-active='true'] {
 	background-color: rgb(var(--color-primary-rgb));
 	color: #030322;
-	box-shadow: 0px 0px 32px 1px #00FFEE;
+	box-shadow: 0px 0px 32px 1px rgb(var(--color-primary-rgb));
 }

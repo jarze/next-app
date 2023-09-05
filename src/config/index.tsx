@@ -8,15 +8,6 @@ export const routes = [
 		],
 	},
 	{
-		title: '业务布局',
-		url: '/tab/business',
-		children: [
-			{ title: '业务介绍', url: '/tab/business-introduce' },
-			{ title: '全国布局', url: '/tab/business-layout' },
-		],
-	},
-	{ title: '人才团队', url: '/tab/wy-team' },
-	{
 		title: '合作生态',
 		url: '/tab/collaboration',
 		children: [
@@ -24,7 +15,16 @@ export const routes = [
 			{ title: '合作伙伴', url: '/tab/collaboration-team' },
 		],
 	},
+	{
+		title: '业务布局',
+		url: '/tab/business',
+		children: [
+			{ title: '业务介绍', url: '/tab/business-introduce' },
+			{ title: '全国布局', url: '/tab/business-layout' },
+		],
+	},
 	{ title: '荣誉资质', url: '/tab/honour' },
+	{ title: '人才团队', url: '/tab/wy-team' },
 	{
 		title: '社会责任',
 		url: '/tab/duty',
