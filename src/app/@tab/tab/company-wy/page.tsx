@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Tabs from '@/components/Tabs';
 import Introduction from './components/Introduction';
+import Vision from './components/Vision';
 
 export default function Page() {
   const [value, setValue] = useState('1');
@@ -16,7 +17,7 @@ export default function Page() {
         <Introduction />
       </Tabs.Panel>
       <Tabs.Panel tabKey="2" tab={'使命愿景'}>
-        <div>11111</div>
+        <Vision />
       </Tabs.Panel>
     </Tabs>
   );
