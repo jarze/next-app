@@ -1,13 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240.81" height="230.39" viewBox="0 0 1240.81 230.39">
+<svg xmlns="http://www.w3.org/2000/svg" width="1240.81" height="230.39" viewBox="0 0 1240.81 230.39"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="组_51267" data-name="组 51267" transform="translate(-1401.19 -195.933)">
-    <path id="路径_72449" data-name="路径 72449" d="M1592.19,3580.109h449.059l84.707,84.707h552.767v122.94h144.893" transform="translate(-191 -3370.434)" fill="none" stroke="#0fe" stroke-width="2"/>
-    <path id="路径_72448" data-name="路径 72448" d="M1732.87,3580.109l13.743-13.743h171.073l13.743,13.743Z" transform="translate(-170 -3370.434)" fill="#0fe"/>
-    <g id="椭圆_9457" data-name="椭圆 9457" transform="translate(2624 408.322)" fill="#030322" stroke="#0fe" stroke-width="2">
-      <circle cx="9" cy="9" r="9" stroke="none"/>
-      <circle cx="9" cy="9" r="8" fill="none"/>
+    <path id="路径_72449" data-name="路径 72449" d="M1592.19,3580.109h449.059l84.707,84.707h552.767v122.94h144.893"
+      transform="translate(-191 -3370.434)" fill="none" stroke="#0fe" stroke-width="2" />
+    <path id="路径_72448" data-name="路径 72448" d="M1732.87,3580.109l13.743-13.743h171.073l13.743,13.743Z"
+      transform="translate(-170 -3370.434)" fill="#0fe" />
+    <g id="椭圆_9457" data-name="椭圆 9457" transform="translate(2624 408.322)" fill="#030322" stroke="#0fe"
+      stroke-width="2">
+      <circle cx="9" cy="9" r="8">
+        <animate attributeName="fill" values="#0fe;#030322" dur="3s" repeatCount="indefinite" />
+      </circle>
     </g>
-    <circle r="10" fill="#0fe" transform="translate(-191 -3370.434)">
-      <animateMotion dur="5s" repeatCount="indefinite" path="M1592.19,3580.109h449.059l84.707,84.707h552.767v122.94h144.893" />
-    </circle>
+    <g transform="translate(-191 -3370.434)">
+      <image xlink:href="/line/point.svg" transform="translate(0 -5)">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto" keyPoints="1;0.5;0;0" keyTimes="0;0.25;0.67;1">
+          <mpath xlink:href="#路径_72449" />
+        </animateMotion>
+      </image>
+    </g>
   </g>
 </svg>

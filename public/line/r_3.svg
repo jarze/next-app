@@ -1,10 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1306.016" height="86.252" viewBox="0 0 1306.016 86.252">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1306.016" height="86.252"
+  viewBox="0 0 1306.016 86.252">
   <g id="组_51274" data-name="组 51274" transform="translate(-3068.762 -719.58)">
-    <path id="路径_72486" data-name="路径 72486" d="M1931.43,3580.109l-13.743-13.743H1746.613l-13.743,13.743Z" transform="translate(1980.022 -2775.685)" fill="#0fe"/>
-    <path id="路径_72470" data-name="路径 72470" d="M8582.774,4030.079l-704.767-.408-75.844-75.844h-516.4" transform="translate(-4207.998 -3225.246)" fill="none" stroke="#0fe" stroke-width="2"/>
-    <g id="椭圆_9461" data-name="椭圆 9461" transform="translate(3068.762 719.58)" fill="#030322" stroke="#0fe" stroke-width="2">
-      <ellipse cx="9" cy="9" rx="9" ry="9" stroke="none"/>
-      <ellipse cx="9" cy="9" rx="8" ry="8" fill="none"/>
+    <path id="路径_72486" data-name="路径 72486" d="M1931.43,3580.109l-13.743-13.743H1746.613l-13.743,13.743Z"
+      transform="translate(1980.022 -2775.685)" fill="#0fe" />
+    <path id="路径_72470" data-name="路径 72470" d="M8582.774,4030.079l-704.767-.408-75.844-75.844h-516.4"
+      transform="translate(-4207.998 -3225.246)" fill="none" stroke="#0fe" stroke-width="2" />
+    <g id="椭圆_9461" data-name="椭圆 9461" transform="translate(3068.762 719.58)" fill="#030322" stroke="#0fe"
+      stroke-width="2">
+      <circle cx="9" cy="9" r="8">
+        <animate attributeName="fill" values="#0fe;#030322" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <g transform="translate(-4207.998 -3225.246)">
+      <image xlink:href="/line/point.svg" transform="translate(0 0)">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto" keyPoints="1;0.5;0;0" keyTimes="0;0.25;0.67;1">
+          <mpath xlink:href="#路径_72470" />
+        </animateMotion>
+      </image>
     </g>
   </g>
 </svg>

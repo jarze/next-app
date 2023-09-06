@@ -1,9 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1259.131" height="85.844" viewBox="0 0 1259.131 85.844">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1259.131" height="85.844"
+  viewBox="0 0 1259.131 85.844">
   <g id="组_51271" data-name="组 51271" transform="translate(-1469.759 -721.708)">
-    <path id="路径_72465" data-name="路径 72465" d="M7285.759,4029.67h657.883l75.844-75.844h516.4" transform="translate(-5816 -3223.118)" fill="none" stroke="#0fe" stroke-width="2"/>
-    <g id="椭圆_9459" data-name="椭圆 9459" transform="translate(2710.891 721.708)" fill="#030322" stroke="#0fe" stroke-width="2">
-      <circle cx="9" cy="9" r="9" stroke="none"/>
-      <circle cx="9" cy="9" r="8" fill="none"/>
+    <path id="路径_72465" data-name="路径 72465" d="M7285.759,4029.67h657.883l75.844-75.844h516.4"
+      transform="translate(-5816 -3223.118)" fill="none" stroke="#0fe" stroke-width="2" />
+    <g id="椭圆_9459" data-name="椭圆 9459" transform="translate(2710.891 721.708)" fill="#030322" stroke="#0fe"
+      stroke-width="2">
+      <circle cx="9" cy="9" r="8">
+        <animate attributeName="fill" values="#0fe;#030322" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <g transform="translate(-5816 -3223.118)">
+      <image xlink:href="/line/point.svg" transform="translate(0 -5)">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto" keyPoints="1;0.5;0;0" keyTimes="0;0.25;0.67;1">
+          <mpath xlink:href="#路径_72465" />
+        </animateMotion>
+      </image>
     </g>
   </g>
 </svg>
