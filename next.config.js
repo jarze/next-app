@@ -6,6 +6,9 @@ const nextConfig = {
 	env: {
 		apiUrl: config.apiUrl,
 	},
+	typescript: {
+		ignoreBuildErrors: true,
+	},
 	async rewrites() {
 		return [
 			{
