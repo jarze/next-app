@@ -16,14 +16,18 @@ export default function Tabs({
 }: TTabsProp): JSX.Element {
   const activePanel = useMemo(() => {
     return children.find((v) => v.props?.tabKey === activeKey);
-  }, [activeKey]);
+  }, [activeKey, children]);
 
   return (
     <>
       <div className="flex flex-row">
         <TabsContext.Provider value={{ activeKey, onChange }}>
           {children.map((m) => {
-            return <TabItem tabKey={m.props.tabKey}>{m.props.tab}</TabItem>;
+            return (
+              <TabItem key={m.props.tabKey} tabKey={m.props.tabKey}>
+                {m.props.tab}
+              </TabItem>
+            );
           })}
         </TabsContext.Provider>
       </div>

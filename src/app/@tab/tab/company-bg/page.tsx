@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Policy from './components/Policy';
 import Tabs from '@/components/Tabs';
+import GenerateBackground from './components/GenerateBackground';
 
 export default function Page() {
   const [value, setValue] = useState('1');
@@ -15,7 +16,7 @@ export default function Page() {
         <Policy />
       </Tabs.Panel>
       <Tabs.Panel tabKey="2" tab={'发电侧结构背景'}>
-        <div>11111</div>
+        <GenerateBackground />
       </Tabs.Panel>
     </Tabs>
   );
