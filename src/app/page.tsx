@@ -4,8 +4,8 @@ import { routes as data } from '@/config';
 import Svg from '@/components/rsvg';
 
 const pathRelative: any = {
-	l_1: 'left-[418px] top-7',
-	r_1: 'right-[418px] top-7',
+	l_1: 'left-[425px] top-9',
+	r_1: 'right-[425px] top-9',
 	l_2: 'top-24',
 	r_2: 'top-24',
 	l_3: 'top-7',
@@ -61,6 +61,14 @@ export default function Home() {
 									pathRelative[loc] || ''
 								}`}
 							>
+								<Image
+									src={'/button/corner.svg'}
+									width={430}
+									height={140}
+									aria-disabled
+									alt=''
+									className='absolute left-0 -top-2 scale-105 animate-ping-small'
+								/>
 								{i.title}
 							</Link>
 						</div>

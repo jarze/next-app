@@ -30,6 +30,7 @@ const config: Config = {
 				'pulse-slow': 'pulse 3s linear infinite',
 				'pulse-scale': 'pulse 3s linear infinite,scale 3s linear infinite',
 				'pluse-shadow': 'pluse-shadow 3s linear infinite',
+				'ping-small': 'ping-small 3s linear infinite',
 			},
 			keyframes: {
 				'pluse-shadow': {
@@ -40,6 +41,16 @@ const config: Config = {
 					'85%': {
 						'box-shadow':
 							'inset 0px 0px 32px 1px rgb(var(--color-primary-rgb)),0px 0px 32px 1px rgb(var(--color-primary-rgb))',
+					},
+				},
+				'ping-small': {
+					'0% ,67%, 100%': {
+						transform: 'scale(1.05)',
+						opacity: '1',
+					},
+					'85%': {
+						transform: 'scale(1.15)',
+						opacity: '0.3',
 					},
 				},
 				scale: {

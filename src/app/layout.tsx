@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 	viewport: {
 		viewportFit: 'cover',
 		width: 'device-width',
+		userScalable: false,
 	},
 };
 
