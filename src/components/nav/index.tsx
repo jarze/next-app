@@ -1,12 +1,15 @@
 'use client';
 import { useMemo } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSelectedLayoutSegments } from 'next/navigation';
 import { routes as data } from '@/config';
 import Link from 'next/link';
 import './style.css';
 
 export default function Page() {
 	const path = usePathname();
+
+	// 二级tab页
+	const segments = useSelectedLayoutSegments();
 
 	const routes = useMemo<any>(
 		() =>
@@ -18,7 +21,11 @@ export default function Page() {
 
 	return (
 		routes?.title && (
-			<nav className='w-60 h-max basis-[510px] text-[48px] text-center'>
+			<nav
+				className={`w-60 h-max basis-[510px] text-[48px] text-center ${
+					segments?.length > 1 ? 'pointer-events-none' : ''
+				}`}
+			>
 				<h2 className='mb-20 h-[133px] leading-[133px] text-[64px] nav-title'>
 					{routes?.title}
 				</h2>
