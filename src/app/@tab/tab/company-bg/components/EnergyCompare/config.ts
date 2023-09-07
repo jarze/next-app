@@ -7,18 +7,10 @@ export const chinaMapConfig = (configData: any) => {
       type: 'continuous',
       left: 'right',
       min: 0,
-      max: max,
+      max: 1,
       show: false,
       inRange: {
-        color: [
-          '#96D7CC',
-          '#9CDB6B',
-          '#A3E00B',
-          '#C1B809',
-          '#E09107',
-          '#E04919',
-          '#E0022B',
-        ],
+        color: ['#00FFFF', '#89FF00'],
       },
       text: [`最大值：${max}`, 0],
       textStyle: {
