@@ -1,8 +1,15 @@
+'use client';
 import TabCard from '@/components/TabCard';
+import request from '@/utils/request';
 
 export default function Page() {
   return (
-    <div className=" absolute z-50 -top-[95px] -left-[129px] bg-[url('/duty/bg_duty.png')] h-[904px] w-[3171px] bg-[length:3171px_833px] overflow-hidden ">
+    <div
+      onClick={() => {
+        request.get('/front/light-on', { baseURL: '/api' });
+      }}
+      className=" absolute z-50 -top-[95px] -left-[129px] bg-[url('/duty/bg_duty.png')] h-[904px] w-[3171px] bg-[length:3171px_833px] overflow-hidden "
+    >
       <TabCard styles="!absolute w-[1201px] h-[464px] px-[30px] py-[40px] right-24 top-1/2 -translate-y-1/2">
         <span className="font-bold text-[32px]">万益能源星空计划</span>
         <p className=" leading-[48px] mt-5 text-2xl">
