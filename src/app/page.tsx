@@ -18,11 +18,11 @@ export default function Home() {
 			<div className='absolute h-[1080px] w-[1220px] flex flex-col justify-center items-center z-[-1]'>
 				<Image
 					src='/c_start.png'
-					alt='小益'
+					alt=''
 					width={508}
 					height={528}
 					priority
-					className='absolute mt-[-215px] ml-[-300px] z-1'
+					className='absolute mt-[-170px] ml-[-340px] z-10 mask-start'
 				/>
 				<Image
 					className='dark:drop-shadow-[0_0_0.3rem_#ffffff70] relative top-10'

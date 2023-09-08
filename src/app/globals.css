@@ -97,3 +97,6 @@ body {
   }
 }
 
+.mask-start {
+  mask-image: linear-gradient( 135deg, #f9efda 50%, rgba(249, 239, 218, 0.06) 68%, transparent );
+}

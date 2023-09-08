@@ -31,7 +31,7 @@ export default function Page() {
 			options={particlesConfig as any}
 			init={particlesInit}
 			// loaded={particlesLoaded}
-			className='fixed top-0 left-0 right-0 bottom-0'
+			className='fixed top-0 left-0 right-0 bottom-0 filter blur-[2px]'
 		/>
 	);
 }
