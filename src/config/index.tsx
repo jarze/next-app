@@ -28,6 +28,7 @@ export const routes = [
 	{
 		title: '社会责任',
 		url: '/tab/duty',
+		link: true,
 		children: [{ title: '星空计划', url: '/tab/duty-sky' }],
 	},
 ];

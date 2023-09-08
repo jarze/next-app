@@ -27,7 +27,13 @@ export default function Page() {
 				}`}
 			>
 				<h2 className='mb-20 h-[133px] leading-[133px] text-[64px] nav-title'>
-					{routes?.title}
+					{routes?.link ? (
+						<Link replace href={routes?.url}>
+							{routes.title}
+						</Link>
+					) : (
+						routes?.title
+					)}
 				</h2>
 				<ul className='relative m-0 list-none'>
 					{routes?.children?.map?.((i: any) => (
