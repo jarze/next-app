@@ -28,21 +28,21 @@ export default function RootLayout({ children, tab }: any) {
 					alt='万益能源'
 					width={443}
 					height={141}
-					className='fixed left-16 top-16 -z-10'
+					className='absolute left-16 top-16 -z-10'
 				/>
 				<Image
 					src='/bg_lb.svg'
 					alt=''
 					width={443}
 					height={141}
-					className='fixed left-16 bottom-16 -z-10'
+					className='absolute left-16 bottom-16 -z-10'
 				/>
 				<Image
 					src='/bg_lb.svg'
 					alt=''
 					width={443}
 					height={141}
-					className='fixed right-16 top-16 -z-10 rotate-180'
+					className='absolute right-16 top-16 -z-10 rotate-180'
 				/>
 				{children}
 				{tab}

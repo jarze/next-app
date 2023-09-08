@@ -41,7 +41,7 @@ export default function Home() {
 					priority
 				/>
 			</div>
-			<div className='w-2/3 h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14'>
+			<div className='h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14'>
 				{data.map((i, index) => {
 					const loc = `${index % 2 ? 'r' : 'l'}_${Math.ceil((index + 1) / 2)}`;
 					return (

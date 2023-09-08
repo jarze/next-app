@@ -7,7 +7,7 @@ export default function Page({ children }: any) {
 	return (
 		<div
 			data-back
-			className='fixed top-0 left-0 right-0 bottom-0 flex align-middle justify-center items-center backdrop-blur z-20'
+			className='absolute top-0 left-0 right-0 bottom-0 flex align-middle justify-center items-center backdrop-blur z-20'
 			onClick={(e: any) => {
 				if (e.target?.dataset?.back) {
 					e?.stopPropagation?.();
