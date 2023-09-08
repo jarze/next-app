@@ -11,7 +11,7 @@ export default function Page() {
         height={776}
         alt={''}
       />
-      <TabCard styles="w-[1570px] h-[770px]">
+      <TabCard styles="w-[1500px] h-[770px]">
         <div className="flex w-full justify-evenly mt-[120px]">
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[200px] rounded-full bg-primary text-center leading-[200px] font-bold text-[55px] text-[#030322]">

@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Vision() {
   return (
-    <div className="flex flex-row">
-      <TabCard styles="mr-[59px] h-[631px]">
+    <div className="flex flex-row overflow-x-auto ">
+      <TabCard styles="mr-[59px] h-[631px] flex-shrink-0">
         <Image
           src="/company/vision_1.png"
           className="h-[631px]"
@@ -14,7 +14,7 @@ export default function Vision() {
           alt={''}
         />
       </TabCard>
-      <TabCard styles="mr-[59px] h-[631px]">
+      <TabCard styles="mr-[59px] h-[631px] flex-shrink-0">
         <Image
           src="/company/vision_2.png"
           className="h-[631px]"
@@ -24,7 +24,7 @@ export default function Vision() {
           alt={''}
         />
       </TabCard>
-      <TabCard styles='h-[631px]'>
+      <TabCard styles="h-[631px] flex-shrink-0">
         <Image
           src="/company/vision_3.png"
           className="h-[631px]"

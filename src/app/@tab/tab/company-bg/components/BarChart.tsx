@@ -29,13 +29,28 @@ export default function BarChart() {
         },
         legend: {
           data: ['中国', '美国', '日本'],
+          selectedMode: false,
+          right:40,
+          itemWidth: 35,
+          itemHeight: 35,
+          itemGap: 60,
+          textStyle: {
+            color: '#fff',
+            fontSize: 26,
+          },
         },
         xAxis: [
           {
             type: 'category',
             axisTick: { show: false },
             axisLine: { show: false },
-            axisLabel: { show: true },
+            axisLabel: {
+              show: true,
+              textStyle: {
+                color: '#fff',
+                fontSize: 26,
+              },
+            },
             // prettier-ignore
             data: ['火电', '天然气', '风/核/可再生', '其他'],
           },
@@ -61,7 +76,7 @@ export default function BarChart() {
             itemStyle: {
               color: '#2490FD',
             },
-            data: [20.13, 40.55, 39.00, 0.31],
+            data: [20.13, 40.55, 39.0, 0.31],
           },
           {
             name: '日本',
