@@ -95,7 +95,7 @@ export default function GeogMap() {
                   )
                   .map((m) => {
                     return (
-                      <div className="flex w-full px-4 py-1">
+                      <div key={m.name} className="flex w-full px-4 py-1">
                         <div className="flex flex-1">{m.label || m.name}</div>
                         <div className="flex flex-[2] justify-end">
                           {m.value?.total}
@@ -130,7 +130,7 @@ export default function GeogMap() {
                   )
                   .map((m) => {
                     return (
-                      <div className="flex w-full px-4 py-1">
+                      <div key={m.name} className="flex w-full px-4 py-1">
                         <div className="flex flex-1">{m.label || m.name}</div>
                         <div className="flex flex-[2] justify-end">
                           {m.value?.total}
