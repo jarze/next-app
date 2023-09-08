@@ -43,7 +43,7 @@ export default async function Society(params: any) {
 			{data?.map?.((i: any) => (
 				<div
 					key={i.title}
-					className='relative text-primary w-max flex flex-col items-center border border-primary bg-[#141A25]'
+					className='relative text-primary w-max flex flex-col items-center border border-primary bg-bg-img transition-shadow active:shadow-inner-primary'
 				>
 					<Image src={i.icon} width={707} height={327} alt={i.title} />
 					<span className='absolute bottom-8'>{i.title}</span>

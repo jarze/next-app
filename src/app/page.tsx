@@ -47,9 +47,13 @@ export default function Home() {
 					return (
 						<div
 							key={i.title}
-							className={`flex items-start ${
+							className={`drop flex items-start ${
 								index % 2 ? 'flex-row' : 'flex-row-reverse'
 							}`}
+							style={{
+								animationDelay: `${1100 * (index % 3)}ms`,
+								animationDuration: `${10 + index}s`,
+							}}
 						>
 							<Svg
 								src={`/line/${loc}.svg`}

@@ -47,7 +47,7 @@ export default async function Society({ searchParams }: any) {
 										<div
 											key={j.icon}
 											// id={index ? '' : (i.key as string)}
-											className='relative text-primary w-max flex flex-col items-center border border-primary bg-[#141A25]'
+											className='relative text-primary w-max flex flex-col items-center border border-primary bg-bg-img transition-shadow active:shadow-inner-primary'
 										>
 											<Image
 												src={j.icon}

@@ -6,6 +6,7 @@
   :root {
     --color-primary-rgb: 0, 255, 238;
     --color-button-bg: rgba(29, 36, 46, 0.52);
+    --color-img-bg: #141a25;
     --black: #030322;
     /* --color-primary: #00FFEE; */
   }
@@ -30,7 +31,6 @@ body {
   min-width: 4850px;
   position: relative;
   min-height: max(100vh, 1000px);
-
 }
 
 /* 滚动条 */
@@ -51,7 +51,6 @@ body {
   background: transparent;
 }
 
-
 #content {
   /* min-width: 800px;
   min-height: 400px; */
@@ -60,6 +59,11 @@ body {
   no-repeat right center / auto 100% url(/bg_border_r.svg); */
   /* background:
     content-box no-repeat left center / auto 100% url(/bg_border_l.svg); */
+}
+
+#content img {
+  max-height: 100%;
+  object-fit: contain;
 }
 
 #content::before {
@@ -82,3 +86,14 @@ body {
   width: 100px;
   background: no-repeat right center / auto 100% url(/bg_border_r.svg);
 }
+
+.drop {
+  animation: drop 10s ease-out infinite;
+}
+
+@keyframes drop {
+  50% {
+    transform: perspective(500px) translate3d(10px, 10px, 10px);
+  }
+}
+

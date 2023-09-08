@@ -11,6 +11,7 @@ const config: Config = {
 		colors: {
 			primary: 'rgba(var(--color-primary-rgb), <alpha-value>)',
 			'bg-button': 'var(--color-button-bg)',
+			'bg-img': 'var(--color-img-bg)',
 			...colors,
 			black: 'var(--black)',
 		},
