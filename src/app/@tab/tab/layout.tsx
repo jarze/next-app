@@ -4,7 +4,10 @@ import Nav from '@/components/nav';
 export default function Layout(props: any) {
 	return (
 		<Back>
-			<div data-back className='relative w-[70%] h-5/6 flex gap-20'>
+			<div
+				data-back
+				className='relative w-[70%] h-5/6 flex flex-row-reverse gap-20'
+			>
 				<Nav />
 				<div
 					id='content'

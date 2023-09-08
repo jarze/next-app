@@ -61,6 +61,20 @@ body {
     content-box no-repeat left center / auto 100% url(/bg_border_l.svg); */
 }
 
+
+#content:has(>div>*[data-w-auto]) {
+  flex: unset;
+}
+
+#content:has(>div>*[data-no-wrapper]) {
+  padding:0;
+  flex: unset;
+}
+
+ #content:has(>div>*[data-no-wrapper])::before, #content:has(>div>*[data-no-wrapper])::after {
+  content: none;
+}
+
 #content img {
   max-height: 100%;
   object-fit: contain;
