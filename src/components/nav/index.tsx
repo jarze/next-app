@@ -28,7 +28,7 @@ export default function Page() {
 			>
 				<h2 className='mb-20 h-[133px] leading-[133px] text-[64px] nav-title'>
 					{routes?.link ? (
-						<Link replace href={routes?.url}>
+						<Link replace href={routes?.url} className='block'>
 							{routes.title}
 						</Link>
 					) : (
@@ -39,11 +39,11 @@ export default function Page() {
 					{routes?.children?.map?.((i: any) => (
 						<li
 							key={i.url}
-							className='cursor-pointer transition duration-300 ease-linear mb-10 text-5xl text-primary leading-[2.5em] bg-bg-button border border-primary border-l-8 shadow-inner-primary active:bg-primary active:text-black active:shadow-primary data-[active]:bg-primary data-[active]:text-black data-[active]:shadow-primary'
-							{...(path.startsWith(i.url) ? { ['data-active']: true } : {})}
+							className='cursor-pointer transition duration-300 ease-linear mb-10 text-5xl text-primary leading-[2.5em] bg-bg-button border border-primary border-l-8 shadow-inner-primary active:bg-primary active:text-black active:shadow-primary data-[active=true]:bg-primary data-[active=true]:text-black data-[active=true]:shadow-primary'
+							data-active={path.startsWith(i.url)}
 						>
-							<Link replace href={i.url}>
-								<span>{i.title}</span>
+							<Link replace href={i.url} className='block'>
+								{i.title}
 							</Link>
 						</li>
 					))}
