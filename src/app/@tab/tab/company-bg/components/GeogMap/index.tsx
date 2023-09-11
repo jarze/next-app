@@ -19,17 +19,17 @@ const echartColors = [
 export default function GeogMap() {
   const echartsRef = useRef<HTMLDivElement>(null);
 
-  let mapInstance: any = null;
+  let mapInstance = useRef<echarts.ECharts>();
 
   const renderMap = () => {
     if (echartsRef.current !== null) {
       const renderedMapInstance = echarts.getInstanceByDom(echartsRef.current);
       if (renderedMapInstance) {
-        mapInstance = renderedMapInstance;
+        mapInstance.current = renderedMapInstance;
       } else {
-        mapInstance = echarts.init(echartsRef.current);
+        mapInstance.current = echarts.init(echartsRef.current);
       }
-      mapInstance.setOption(
+      mapInstance.current.setOption(
         chinaMapConfig({ data: resData.data, max: resData.max, min: 0 }),
       );
     }
@@ -41,10 +41,10 @@ export default function GeogMap() {
   }, []);
   useEffect(() => {
     window.onresize = function () {
-      mapInstance && mapInstance.resize();
+      mapInstance.current && mapInstance.current.resize();
     };
     return () => {
-      mapInstance && mapInstance.dispose();
+      mapInstance.current && mapInstance.current.dispose();
     };
   }, []);
   return (
