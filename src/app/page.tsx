@@ -16,18 +16,17 @@ export default function Home() {
 	return (
 		<main className='relative h-screen flex items-center justify-center text-[56px]'>
 			<div className='absolute h-[1080px] w-[1220px] flex flex-col justify-center items-center z-[-1]'>
-				<Image
-					src='/c_start.png'
+				<Svg
+					src='/main/circle.svg'
 					alt=''
 					width={508}
-					height={528}
-					priority
+					height={519}
 					className='absolute mt-[-170px] ml-[-340px] z-10 mask-start'
 				/>
 				<Image
 					className='dark:drop-shadow-[0_0_0.3rem_#ffffff70] relative top-10'
-					src='/xiaoyi.svg'
-					alt='小益 Logo'
+					src='/IP.svg'
+					alt='小益 IP'
 					width={330}
 					height={450}
 					priority
@@ -60,6 +59,7 @@ export default function Home() {
 								className='max-w-full overflow-hidden peer'
 							/>
 							<Link
+								id={loc}
 								href={i.link ? i.url : i.children?.[0]?.url || i.url}
 								className={`peer-[:empty]:hidden transition inline-block px-24 py-4 whitespace-nowrap leading-normal bg-bg-button text-primary border border-primary shadow-inner-primary active:bg-primary active:text-black active:shadow-primary relative animate-pluse-shadow ${
 									pathRelative[loc] || ''

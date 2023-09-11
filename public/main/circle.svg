@@ -1,0 +1,330 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508.438" height="518.943"
+  viewBox="0 0 508.438 518.943">
+  <defs>
+    <radialGradient id="radial-gradient">
+      <stop offset="0.003" stop-color="#f9efda" />
+      <stop offset="0.103" stop-color="#f9efda" stop-opacity="0.792" />
+      <stop offset="0.218" stop-color="#f9efda" stop-opacity="0.584" />
+      <stop offset="0.335" stop-color="#f9efda" stop-opacity="0.404" />
+      <stop offset="0.452" stop-color="#f9efda" stop-opacity="0.259" />
+      <stop offset="0.568" stop-color="#f9efda" stop-opacity="0.145" />
+      <stop offset="0.685" stop-color="#f9efda" stop-opacity="0.063" />
+      <stop offset="0.8" stop-color="#f9efda" stop-opacity="0.016" />
+      <stop offset="0.916" stop-color="#f9efda" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5">
+      <stop offset="0" stop-color="#fff8e8" />
+      <stop offset="0.045" stop-color="#fff8e8" stop-opacity="0.918" />
+      <stop offset="0.186" stop-color="#fff8e8" stop-opacity="0.678" />
+      <stop offset="0.326" stop-color="#fff8e8" stop-opacity="0.471" />
+      <stop offset="0.462" stop-color="#fff8e8" stop-opacity="0.302" />
+      <stop offset="0.592" stop-color="#fff8e8" stop-opacity="0.169" />
+      <stop offset="0.716" stop-color="#fff8e8" stop-opacity="0.075" />
+      <stop offset="0.83" stop-color="#fff8e8" stop-opacity="0.02" />
+      <stop offset="0.927" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" xlink:href="#radial-gradient-2" />
+    <radialGradient id="radial-gradient-4" xlink:href="#radial-gradient-2" />
+    <radialGradient id="radial-gradient-5" xlink:href="#radial-gradient-2" />
+    <radialGradient id="radial-gradient-6">
+      <stop offset="0.069" stop-color="#fff8e8" stop-opacity="0.996" />
+      <stop offset="0.125" stop-color="#fff8e8" stop-opacity="0.859" />
+      <stop offset="0.216" stop-color="#fff8e8" stop-opacity="0.663" />
+      <stop offset="0.312" stop-color="#fff8e8" stop-opacity="0.482" />
+      <stop offset="0.41" stop-color="#fff8e8" stop-opacity="0.333" />
+      <stop offset="0.512" stop-color="#fff8e8" stop-opacity="0.212" />
+      <stop offset="0.618" stop-color="#fff8e8" stop-opacity="0.118" />
+      <stop offset="0.729" stop-color="#fff8e8" stop-opacity="0.051" />
+      <stop offset="0.85" stop-color="#fff8e8" stop-opacity="0.012" />
+      <stop offset="1" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-7">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="0.191" stop-color="#fffbf2" />
+      <stop offset="0.309" stop-color="#fff8e8" />
+      <stop offset="0.383" stop-color="#fff8e8" stop-opacity="0.788" />
+      <stop offset="0.466" stop-color="#fff8e8" stop-opacity="0.58" />
+      <stop offset="0.55" stop-color="#fff8e8" stop-opacity="0.404" />
+      <stop offset="0.634" stop-color="#fff8e8" stop-opacity="0.259" />
+      <stop offset="0.717" stop-color="#fff8e8" stop-opacity="0.145" />
+      <stop offset="0.8" stop-color="#fff8e8" stop-opacity="0.063" />
+      <stop offset="0.881" stop-color="#fff8e8" stop-opacity="0.016" />
+      <stop offset="0.961" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-8">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="0.365" stop-color="#fff" />
+      <stop offset="0.397" stop-color="#fff" stop-opacity="0.886" />
+      <stop offset="0.462" stop-color="#fff" stop-opacity="0.678" />
+      <stop offset="0.529" stop-color="#fff" stop-opacity="0.498" />
+      <stop offset="0.597" stop-color="#fff" stop-opacity="0.345" />
+      <stop offset="0.667" stop-color="#fff" stop-opacity="0.22" />
+      <stop offset="0.74" stop-color="#fff" stop-opacity="0.122" />
+      <stop offset="0.815" stop-color="#fff" stop-opacity="0.055" />
+      <stop offset="0.896" stop-color="#fff" stop-opacity="0.012" />
+      <stop offset="0.992" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-9">
+      <stop offset="0" stop-color="#ffe8b4" />
+      <stop offset="0.004" stop-color="#ffecc2" />
+      <stop offset="0.012" stop-color="#fff1d3" />
+      <stop offset="0.021" stop-color="#fff5df" />
+      <stop offset="0.034" stop-color="#fff7e6" />
+      <stop offset="0.069" stop-color="#fff8e8" />
+      <stop offset="0.102" stop-color="#fff8e8" stop-opacity="0.922" />
+      <stop offset="0.214" stop-color="#fff8e8" stop-opacity="0.682" />
+      <stop offset="0.324" stop-color="#fff8e8" stop-opacity="0.475" />
+      <stop offset="0.431" stop-color="#fff8e8" stop-opacity="0.302" />
+      <stop offset="0.534" stop-color="#fff8e8" stop-opacity="0.173" />
+      <stop offset="0.632" stop-color="#fff8e8" stop-opacity="0.078" />
+      <stop offset="0.722" stop-color="#fff8e8" stop-opacity="0.02" />
+      <stop offset="0.797" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-10" cx="0.5">
+      <stop offset="0" stop-color="#ffe8b4" />
+      <stop offset="0.094" stop-color="#ffeaba" />
+      <stop offset="0.227" stop-color="#ffefcd" />
+      <stop offset="0.365" stop-color="#fff8e8" />
+      <stop offset="0.421" stop-color="#fff8e8" stop-opacity="0.973" />
+      <stop offset="0.501" stop-color="#fff8e8" stop-opacity="0.902" />
+      <stop offset="0.594" stop-color="#fff8e8" stop-opacity="0.78" />
+      <stop offset="0.698" stop-color="#fff8e8" stop-opacity="0.616" />
+      <stop offset="0.811" stop-color="#fff8e8" stop-opacity="0.404" />
+      <stop offset="0.929" stop-color="#fff8e8" stop-opacity="0.149" />
+      <stop offset="0.992" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-11">
+      <stop offset="0.102" stop-color="#fff" />
+      <stop offset="0.245" stop-color="#f9f7f9" />
+      <stop offset="0.261" stop-color="#f9f6f7" stop-opacity="0.953" />
+      <stop offset="0.288" stop-color="#f9f5f3" stop-opacity="0.824" />
+      <stop offset="0.325" stop-color="#f9f3ed" stop-opacity="0.62" />
+      <stop offset="0.37" stop-color="#f9f1e4" stop-opacity="0.333" />
+      <stop offset="0.417" stop-color="#f9efda" stop-opacity="0" />
+      <stop offset="0.967" stop-color="#f9efda" stop-opacity="0" />
+    </radialGradient>
+    <filter id="路径_72377" x="183.199" y="106.425" width="146.353" height="380.652" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha" />
+      <feGaussianBlur stdDeviation="1.748" result="blur" />
+      <feFlood flood-color="#ffebb4" flood-opacity="0.2" />
+      <feComposite operator="in" in2="blur" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+    <linearGradient id="linear-gradient" x1="-0.027" y1="0.596" x2="1.024" y2="0.403" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0" />
+      <stop offset="0.984" stop-color="#fff" />
+    </linearGradient>
+    <filter id="路径_72380" x="60.033" y="111.183" width="393.569" height="290.925" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha" />
+      <feGaussianBlur stdDeviation="1.748" result="blur-2" />
+      <feFlood flood-color="#fff3ce" />
+      <feComposite operator="in" in2="blur-2" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+    <radialGradient id="radial-gradient-12">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="0.199" stop-color="#fffeff" />
+      <stop offset="0.245" stop-color="#fffaf3" stop-opacity="0.851" />
+      <stop offset="0.321" stop-color="#fff5e3" stop-opacity="0.631" />
+      <stop offset="0.398" stop-color="#fff1d4" stop-opacity="0.435" />
+      <stop offset="0.474" stop-color="#ffeec8" stop-opacity="0.278" />
+      <stop offset="0.548" stop-color="#ffebbf" stop-opacity="0.157" />
+      <stop offset="0.619" stop-color="#ffe9b9" stop-opacity="0.071" />
+      <stop offset="0.687" stop-color="#ffe8b5" stop-opacity="0.02" />
+      <stop offset="0.749" stop-color="#ffe8b4" stop-opacity="0" />
+      <stop offset="0.967" stop-color="#ffe8b4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-13">
+      <stop offset="0" stop-color="#fffeff" />
+      <stop offset="0.041" stop-color="#fffaf3" stop-opacity="0.839" />
+      <stop offset="0.098" stop-color="#fff6e4" stop-opacity="0.647" />
+      <stop offset="0.158" stop-color="#fff2d7" stop-opacity="0.475" />
+      <stop offset="0.22" stop-color="#ffefcc" stop-opacity="0.325" />
+      <stop offset="0.285" stop-color="#ffecc3" stop-opacity="0.208" />
+      <stop offset="0.352" stop-color="#ffeabc" stop-opacity="0.118" />
+      <stop offset="0.424" stop-color="#ffe9b7" stop-opacity="0.051" />
+      <stop offset="0.503" stop-color="#ffe8b4" stop-opacity="0.012" />
+      <stop offset="0.604" stop-color="#ffe8b4" stop-opacity="0" />
+      <stop offset="0.967" stop-color="#ffe8b4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-14">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="0.116" stop-color="#fffeff" />
+      <stop offset="0.168" stop-color="#fffaf3" stop-opacity="0.851" />
+      <stop offset="0.257" stop-color="#fff5e3" stop-opacity="0.631" />
+      <stop offset="0.346" stop-color="#fff1d4" stop-opacity="0.435" />
+      <stop offset="0.432" stop-color="#ffeec8" stop-opacity="0.278" />
+      <stop offset="0.517" stop-color="#ffebbf" stop-opacity="0.157" />
+      <stop offset="0.6" stop-color="#ffe9b9" stop-opacity="0.071" />
+      <stop offset="0.678" stop-color="#ffe8b5" stop-opacity="0.02" />
+      <stop offset="0.749" stop-color="#ffe8b4" stop-opacity="0" />
+      <stop offset="0.967" stop-color="#ffe8b4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g id="组_50938" data-name="组 50938" transform="translate(-1989.785 -1096.614)">
+    <g id="组_50929" data-name="组 50929" transform="translate(2001.021 1105.39)" opacity="0.05"
+      style="mix-blend-mode: color-dodge;isolation: isolate">
+      <g id="组_50925" data-name="组 50925" transform="translate(183.759)">
+        <g id="组_50923" data-name="组 50923" transform="translate(0.876)">
+          <line id="直线_582" data-name="直线 582" y2="173.258" transform="translate(61.301)" fill="none" stroke="#fff"
+            stroke-miterlimit="10" stroke-width="1" />
+          <path id="路径_72369" data-name="路径 72369" d="M2256.588,1176.628v-11.746s122.6-.734,122.6,0v11.746"
+            transform="translate(-2256.588 -1121.567)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="1" />
+          <path id="路径_72370" data-name="路径 72370" d="M2284.34,1281.482v-11.746s81.853-.734,81.853,0v11.746"
+            transform="translate(-2263.966 -1149.443)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="0.817" />
+          <circle id="椭圆_9428" data-name="椭圆 9428" cx="1.468" cy="1.468" r="1.468" transform="translate(59.833 41.479)"
+            fill="#fff" />
+          <circle id="椭圆_9429" data-name="椭圆 9429" cx="1.468" cy="1.468" r="1.468" transform="translate(59.833 118.426)"
+            fill="#fff" />
+        </g>
+        <g id="组_50924" data-name="组 50924" transform="translate(0 321.489)">
+          <line id="直线_583" data-name="直线 583" y1="173.258" transform="translate(61.301)" fill="none" stroke="#fff"
+            stroke-miterlimit="10" stroke-width="1" />
+          <path id="路径_72371" data-name="路径 72371" d="M2378,1704.91v11.746s-122.6.734-122.6,0V1704.91"
+            transform="translate(-2255.394 -1586.713)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="1" />
+          <path id="路径_72372" data-name="路径 72372" d="M2365,1600.056V1611.8s-81.853.734-81.853,0v-11.746"
+            transform="translate(-2262.772 -1558.837)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="0.817" />
+          <circle id="椭圆_9430" data-name="椭圆 9430" cx="1.468" cy="1.468" r="1.468" transform="translate(59.833 128.842)"
+            fill="#fff" />
+          <circle id="椭圆_9431" data-name="椭圆 9431" cx="1.468" cy="1.468" r="1.468" transform="translate(59.833 51.896)"
+            fill="#fff" />
+        </g>
+      </g>
+      <g id="组_50928" data-name="组 50928" transform="translate(0 185.299)">
+        <g id="组_50926" data-name="组 50926">
+          <line id="直线_584" data-name="直线 584" x2="173.258" transform="translate(0 61.301)" fill="none" stroke="#fff"
+            stroke-miterlimit="10" stroke-width="1" />
+          <path id="路径_72373" data-name="路径 72373" d="M2075.718,1481h-11.746s-.734-122.6,0-122.6h11.746"
+            transform="translate(-2020.657 -1358.401)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="1" />
+          <path id="路径_72374" data-name="路径 72374" d="M2180.572,1468.007h-11.746s-.734-81.853,0-81.853h11.746"
+            transform="translate(-2048.533 -1365.779)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="0.817" />
+          <circle id="椭圆_9432" data-name="椭圆 9432" cx="1.468" cy="1.468" r="1.468" transform="translate(41.479 59.833)"
+            fill="#fff" />
+          <circle id="椭圆_9433" data-name="椭圆 9433" cx="1.468" cy="1.468" r="1.468" transform="translate(118.426 59.833)"
+            fill="#fff" />
+        </g>
+        <g id="组_50927" data-name="组 50927" transform="translate(321.489 0.877)">
+          <line id="直线_585" data-name="直线 585" x1="173.258" transform="translate(0 61.301)" fill="none" stroke="#fff"
+            stroke-miterlimit="10" stroke-width="1" />
+          <path id="路径_72375" data-name="路径 72375" d="M2604,1359.595h11.746s.734,122.6,0,122.6H2604"
+            transform="translate(-2485.802 -1359.595)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="1" />
+          <path id="路径_72376" data-name="路径 72376" d="M2499.146,1387.347h11.746s.734,81.854,0,81.854h-11.746"
+            transform="translate(-2457.927 -1366.973)" fill="none" stroke="#fff" stroke-miterlimit="10"
+            stroke-width="0.817" />
+          <circle id="椭圆_9434" data-name="椭圆 9434" cx="1.468" cy="1.468" r="1.468" transform="translate(128.842 59.833)"
+            fill="#fff" />
+          <circle id="椭圆_9435" data-name="椭圆 9435" cx="1.468" cy="1.468" r="1.468" transform="translate(51.896 59.833)"
+            fill="#fff" />
+        </g>
+      </g>
+    </g>
+    <g id="组_50937" data-name="组 50937" transform="translate(1989.785 1103.704)">
+      <circle id="椭圆_9436" data-name="椭圆 9436" cx="177.361" cy="177.361" r="177.361"
+        transform="translate(0 250.826) rotate(-45)" fill="url(#radial-gradient)" />
+      <g id="组_50930" data-name="组 50930" transform="translate(83.087 25.41)" opacity="0.36"
+        style="mix-blend-mode: screen;isolation: isolate">
+        <image id="矩形_136" data-name="矩形 136" width="402.252" height="451.058" xlink:href="/main/radial.png">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" values='0.96;1.05;0.96'
+            dur="10s" repeatCount="indefinite" />
+        </image>
+      </g>
+      <g id="组_50931" data-name="组 50931" transform="translate(75.957 135.406)" opacity="0.6"
+        style="mix-blend-mode: screen;isolation: isolate">
+        <ellipse id="椭圆_9437" data-name="椭圆 9437" cx="24.28" cy="176.28" rx="24.28" ry="176.28"
+          transform="matrix(0.077, -0.997, 0.997, 0.077, 0, 126.273)" fill="url(#radial-gradient-2)" />
+        <ellipse id="椭圆_9438" data-name="椭圆 9438" cx="12.23" cy="175.1" rx="12.23" ry="175.1"
+          transform="translate(15.786 47.76) rotate(-63.232)" fill="url(#radial-gradient-3)" />
+        <ellipse id="椭圆_9439" data-name="椭圆 9439" cx="139.033" cy="12.23" rx="139.033" ry="12.23"
+          transform="matrix(0.674, -0.738, 0.738, 0.674, 74.826, 210.099)" fill="url(#radial-gradient-4)" />
+        <ellipse id="椭圆_9440" data-name="椭圆 9440" cx="124.555" cy="9.978" rx="124.555" ry="9.978"
+          transform="translate(112.625 222.415) rotate(-63.232)" fill="url(#radial-gradient-5)" />
+      </g>
+      <circle id="椭圆_9441" data-name="椭圆 9441" cx="80.095" cy="80.095" r="80.095" transform="translate(172.41 171.685)"
+        fill="url(#radial-gradient-6)" style="mix-blend-mode: screen;isolation: isolate" />
+      <g id="组_50932" data-name="组 50932" transform="translate(2.016 195.218)" opacity="0.51">
+        <ellipse id="椭圆_9442" data-name="椭圆 9442" cx="251.605" cy="28.49" rx="251.605" ry="28.49"
+          transform="translate(0 54.78) rotate(-6.25)" fill="url(#radial-gradient-7)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <animate attributeName="ry" values="28.49;20;28.49" dur="3s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse id="椭圆_9443" data-name="椭圆 9443" cx="251.592" cy="4.153" rx="251.592" ry="4.153"
+          transform="matrix(0.994, -0.109, 0.109, 0.994, 2.662, 78.971)" fill="url(#radial-gradient-8)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <animate attributeName="rx" values="251.592;120;251.592" dur="3s" repeatCount="indefinite" />
+        </ellipse>
+      </g>
+      <g id="组_50933" data-name="组 50933" transform="translate(108.363 78.408)">
+        <ellipse id="椭圆_9444" data-name="椭圆 9444" cx="196.92" cy="30.269" rx="196.92" ry="30.269"
+          transform="translate(0 307.148) rotate(-51.25)" fill="url(#radial-gradient-9)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <animate attributeName="rx" values="196.92;160;196.92" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse id="椭圆_9445" data-name="椭圆 9445" cx="196.91" cy="1.688" rx="196.91" ry="1.688"
+          transform="matrix(0.626, -0.78, 0.78, 0.626, 22.296, 325.03)" fill="url(#radial-gradient-10)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <animate attributeName="rx" values="196.91;120;196.91" dur="5s" repeatCount="indefinite" />
+        </ellipse>
+      </g>
+      <circle id="椭圆_9446" data-name="椭圆 9446" cx="62.381" cy="62.381" r="62.381"
+        transform="translate(168.628 250.167) rotate(-45)" fill="url(#radial-gradient-11)">
+        <animate attributeName="r" values="62.4;40;62.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <g id="组_50936" data-name="组 50936" transform="translate(37.328 24.332)">
+        <ellipse id="椭圆_9447" data-name="椭圆 9447" cx="225.687" cy="37.415" rx="225.687" ry="37.415"
+          transform="translate(129.037 438.059) rotate(-76.049)" fill="none" stroke="#787366" stroke-linecap="round"
+          stroke-miterlimit="10" stroke-width="7.693" opacity="0.51"
+          style="mix-blend-mode: screen;isolation: isolate" />
+        <g transform="matrix(1, 0, 0, 1, -37.33, -31.42)" filter="url(#路径_72377)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <path id="路径_72377-2" data-name="路径 72377"
+            d="M2380.094,1250.8c-3.695,42.294-13.545,97.25-27.5,153.413-29.85,120.156-70.8,214.957-90.724,210.009-10.377-2.578-13.606-31.869-8.863-80.4"
+            transform="translate(-2059.2 -1135.72)" fill="none" stroke="#707070" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="6.294" opacity="0.57" />
+        </g>
+        <ellipse id="椭圆_9448" data-name="椭圆 9448" cx="225.687" cy="46.358" rx="225.687" ry="46.358"
+          transform="translate(0.239 298.004) rotate(-29.283)" fill="none" stroke="#bab29e" stroke-miterlimit="10"
+          stroke-width="4.896" opacity="0.23" style="mix-blend-mode: screen;isolation: isolate" />
+        <g id="组_50935" data-name="组 50935" transform="translate(13.39 101.032)" opacity="0.52"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <image id="矩形_137" data-name="矩形 137" width="413.881" height="252.663" xlink:href="/main/ring.png" />
+          <g id="组_50934" data-name="组 50934" transform="translate(7.873 7.778)">
+            <path id="路径_72378" data-name="路径 72378"
+              d="M2415.774,1360.952c9.187-8.03,18.188-16.28,26.5-25.161a171.145,171.145,0,0,0,11.817-13.82c3.6-4.825,6.972-9.91,9.085-15.391.287-.678.465-1.378.705-2.064.166-.7.4-1.388.5-2.086a13.835,13.835,0,0,0,.247-4.116,8.995,8.995,0,0,0-1.126-3.687,8.562,8.562,0,0,0-2.653-2.781,15.539,15.539,0,0,0-3.688-1.786,27.692,27.692,0,0,0-4.177-.987,49.782,49.782,0,0,0-8.817-.47,114.013,114.013,0,0,0-17.872,2.113c-5.934,1.112-11.824,2.542-17.672,4.129-11.713,3.13-23.266,6.94-34.69,11.1q-17.152,6.2-33.976,13.335c-22.449,9.436-44.485,19.889-66.144,31.067q-32.465,16.82-63.76,35.807c-20.832,12.666-41.246,26.041-60.966,40.376-9.866,7.159-19.556,14.562-28.964,22.308a343.8,343.8,0,0,0-27.048,24.547,164.108,164.108,0,0,0-12.056,13.683c-3.7,4.8-7.151,9.888-9.3,15.535a17.913,17.913,0,0,0-1.246,8.773,9.352,9.352,0,0,0,1.644,4.058,11.146,11.146,0,0,0,3.283,2.957,23.436,23.436,0,0,0,8.551,2.751,55.626,55.626,0,0,0,9.092.482.205.205,0,0,1,.011.41,55.988,55.988,0,0,1-9.175-.385,29.615,29.615,0,0,1-4.517-.938,19.053,19.053,0,0,1-4.279-1.792,11.788,11.788,0,0,1-3.507-3.094,10.051,10.051,0,0,1-1.812-4.331,18.64,18.64,0,0,1,1.183-9.172c2.14-5.817,5.581-10.991,9.255-15.879a165.464,165.464,0,0,1,11.984-13.914,345.209,345.209,0,0,1,26.884-24.954c9.352-7.877,18.988-15.411,28.8-22.7,19.655-14.543,40.007-28.122,60.785-41s42.016-25.012,63.632-36.442,43.609-22.172,66.073-31.9c11.246-4.827,22.6-9.424,34.118-13.607,11.532-4.142,23.2-7.936,35.094-11.058,5.955-1.518,11.96-2.879,18.042-3.923a117.529,117.529,0,0,1,18.488-1.89,53.1,53.1,0,0,1,9.434.656,30.839,30.839,0,0,1,4.7,1.192,18.786,18.786,0,0,1,4.483,2.271,11.464,11.464,0,0,1,5,8.874,16.835,16.835,0,0,1-.42,4.978c-.146.81-.416,1.567-.63,2.348-.28.748-.508,1.524-.833,2.246a68.579,68.579,0,0,1-9.875,15.8,169.13,169.13,0,0,1-12.347,13.671c-4.356,4.312-8.866,8.453-13.471,12.475s-9.316,7.917-14.115,11.7a.205.205,0,0,1-.262-.316Z"
+              transform="translate(-2069.593 -1285.059)" fill="url(#linear-gradient)" />
+          </g>
+        </g>
+        <path id="路径_72379" data-name="路径 72379"
+          d="M2245.8,1435.941c100.867,71.793,196,113.822,210.75,93.1s-56.12-96.845-156.986-168.639-196-113.822-210.75-93.1c-13.4,18.832,43.709,83.738,132.8,150.917"
+          transform="translate(-2052.924 -1170.123)" fill="none" stroke="#fff" stroke-miterlimit="10"
+          stroke-width="11.19" opacity="0.17" style="mix-blend-mode: overlay;isolation: isolate" />
+        <g transform="matrix(1, 0, 0, 1, -37.33, -31.42)" filter="url(#路径_72380)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <path id="路径_72380-2" data-name="路径 72380"
+            d="M2457.066,1527.3c14.747-20.719-56.12-96.845-156.987-168.639s-196-113.822-210.75-93.1"
+            transform="translate(-2016.25 -1138.24)" fill="none" stroke="#707070" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="11.19" />
+        </g>
+        <circle id="椭圆_9449" data-name="椭圆 9449" cx="33.224" cy="33.224" r="33.224"
+          transform="translate(0 61.036) rotate(-3.753)" fill="url(#radial-gradient-12)"
+          style="mix-blend-mode: screen;isolation: isolate">
+          <animate attributeName="r" values="33.224;18;33.224" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <circle id="椭圆_9450" data-name="椭圆 9450" cx="28.97" cy="28.97" r="28.97"
+          transform="matrix(0.903, -0.429, 0.429, 0.903, 330.377, 171.204)" fill="url(#radial-gradient-13)">
+          <animate attributeName="r" values="29;16;29" dur="2.3s" repeatCount="indefinite" />
+        </circle>
+        <circle id="椭圆_9451" data-name="椭圆 9451" cx="18.059" cy="18.059" r="18.059"
+          transform="matrix(0.41, -0.912, 0.912, 0.41, 132.299, 378.717)" fill="url(#radial-gradient-14)">
+          <animate attributeName="r" values="18;12;18" dur="2.1s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+  </g>
+</svg>

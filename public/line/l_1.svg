@@ -1,20 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240.81" height="230.39" viewBox="0 0 1240.81 230.39"
+<svg xmlns="http://www.w3.org/2000/svg" width="1241.545" height="230" viewBox="0 0 1241.545 230"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g id="组_51267" data-name="组 51267" transform="translate(-1401.19 -195.933)">
-    <path id="路径_72449" data-name="路径 72449" d="M1592.19,3580.109h449.059l84.707,84.707h552.767v122.94h144.893"
-      transform="translate(-191 -3370.434)" fill="none" stroke="#0fe" stroke-width="2" />
+  <g id="组_51331" data-name="组 51331" transform="translate(-1400.07 -195.933)">
     <path id="路径_72448" data-name="路径 72448" d="M1732.87,3580.109l13.743-13.743h171.073l13.743,13.743Z"
       transform="translate(-170 -3370.434)" fill="#0fe" />
-    <g id="椭圆_9457" data-name="椭圆 9457" transform="translate(2624 408.322)" fill="#030322" stroke="#0fe"
+    <path id="路径_73999" data-name="路径 73999" d="M-7246.385-12083.608h-131.222v-117.768h-558.516l-86.771-86.771H-8478.93"
+      transform="translate(9879 12497.822)" fill="none" stroke="#0fe" stroke-width="2" />
+    <g id="椭圆_9457" data-name="椭圆 9457" transform="translate(2623.615 405.214)" fill="#030322" stroke="#0fe"
       stroke-width="2">
       <circle cx="9" cy="9" r="8">
         <animate attributeName="fill" values="#0fe;#030322" dur="3s" repeatCount="indefinite" />
       </circle>
     </g>
-    <g transform="translate(-191 -3370.434)">
-      <image xlink:href="/line/point.svg" transform="translate(0 -5)">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto" keyPoints="1;0.5;0;0" keyTimes="0;0.25;0.67;1">
-          <mpath xlink:href="#路径_72449" />
+    <g transform="translate(9879 12497.822)">
+      <image xlink:href="/line/point.svg" transform="rotate(180) translate(0 -5)">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto" keyPoints="0;0.5;1;1" keyTimes="0;0.25;0.67;1"
+          begin="load">
+          <mpath xlink:href="#路径_73999" />
         </animateMotion>
       </image>
     </g>
