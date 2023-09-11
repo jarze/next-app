@@ -19,7 +19,7 @@ export default async function Society({ searchParams }: any) {
 	const active = searchParams.link || data?.[0]?.key;
 	return (
 		<>
-			<div className='absolute z-10 left-0 -top-3 whitespace-nowrap'>
+			<div className='absolute z-10 right-0 -top-3 whitespace-nowrap'>
 				{data.map(({ title, key }: any) => (
 					<Link
 						key={key}
