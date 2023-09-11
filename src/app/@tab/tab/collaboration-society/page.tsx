@@ -2,32 +2,32 @@ import Image from 'next/image';
 
 const data = [
 	{
-		title: '中国节能协会',
-		icon: '/collaboration/society/中国节能协会.png',
+		title: '四川省电力企业协会',
+		icon: '/collaboration/society/四川省电力企业协会.png',
 	},
 	{
 		title: '北京环境交易所',
 		icon: '/collaboration/society/北京环境交易所.png',
 	},
 	{
-		title: '四川省节能协会',
-		icon: '/collaboration/society/四川省节能协会.png',
+		title: '重庆市低碳协会',
+		icon: '/collaboration/society/重庆市低碳协会.png',
 	},
 	{
 		title: '四川联合环境交易所',
 		icon: '/collaboration/society/四川联合环境交易所.png',
 	},
 	{
-		title: '四川省电力企业协会',
-		icon: '/collaboration/society/四川省电力企业协会.png',
+		title: '中国节能协会',
+		icon: '/collaboration/society/中国节能协会.png',
 	},
 	{
 		title: '上海环境能源交易所',
 		icon: '/collaboration/society/上海环境能源交易所.png',
 	},
 	{
-		title: '重庆市低碳协会',
-		icon: '/collaboration/society/重庆市低碳协会.png',
+		title: '四川省节能协会',
+		icon: '/collaboration/society/四川省节能协会.png',
 	},
 	{
 		title: '广州碳排放交易权',
