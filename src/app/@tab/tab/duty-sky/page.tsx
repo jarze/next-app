@@ -5,10 +5,11 @@ import request from '@/utils/request';
 export default function Page() {
   return (
     <div
+      data-no-wrapper
       onClick={() => {
         request.get('/front/light-on', { baseURL: '/api' });
       }}
-      className=" absolute z-50 -top-[95px] -left-[129px] bg-[url('/duty/bg_duty.png')] h-[904px] w-[3171px] bg-[length:3171px_833px] overflow-hidden "
+      className="  bg-[url('/duty/bg_duty.png')] h-[898px] w-[3107px] bg-[length:100%_100%] overflow-hidden "
     >
       <TabCard styles="!absolute w-[1201px] h-[464px] px-[30px] py-[40px] right-24 top-1/2 -translate-y-1/2">
         <span className="font-bold text-[32px]">万益能源星空计划</span>
