@@ -10,7 +10,7 @@ export default function IconItem(props: IconItemProps) {
   return (
     <div className="flex flex-col items-center">
       <Image src={src} width={120} height={120} priority alt={text} />
-      <span className="inline-block text-[30px]">{text}</span>
+      <span className="inline-block text-[30px] whitespace-nowrap">{text}</span>
     </div>
   );
 }

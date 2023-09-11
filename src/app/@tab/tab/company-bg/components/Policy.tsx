@@ -5,7 +5,7 @@ import TabCard from '@/components/TabCard';
 export default function Policy() {
   return (
     <div className="flex flex-row">
-      <TabCard title={'电力改革前'} styles="w-[1690px] ml-[80px] h-[633px]">
+      <TabCard title={'电力改革前'} styles="!w-[1083px]  h-[633px]">
         <div className="flex flex-row items-center justify-around px-10 mt-[80px]">
           <IconItem src={'/company/logo_generate.png'} text="发电企业" />
           <Image
@@ -36,8 +36,12 @@ export default function Policy() {
         </div>
       </TabCard>
       <TabCard title={'电力改革后'} styles="w-[1690px] ml-[80px] h-[633px]">
-        <div className="flex flex-row items-center ml-[200px]">
-          <div className="w-[701px] h-[502px] flex flex-col items-center border-dashed border-primary border">
+        <div className="flex flex-row items-center ml-[190px]">
+          <div className="relative w-[731px] h-[502px] flex flex-col items-center border-dashed border-primary border">
+            <div className="absolute -top-[28px] w-[213px] h-[58px] bg-primary text-[#030322] leading-[58px] text-center">
+              电力批发市场
+            </div>
+
             <div className="w-full relative flex flex-row items-center mt-10 pl-[192px]">
               <IconItem
                 src={'/company/logo_trade_center.png'}
@@ -102,7 +106,7 @@ export default function Policy() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center ml-16">
+          <div className="flex flex-col items-center ml-12">
             <IconItem src={'/company/logo_ele_net.png'} text="电网" />
             <Image
               className="h-4 rotate-90 my-10"
