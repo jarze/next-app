@@ -33,6 +33,7 @@ export const chinaMapConfig = (configData: any) => {
       formatter: function (params: any) {
         let { data = {} } = params;
         let { value = 0, name = '' } = data;
+        if (!name) return;
         return `全国火力发电占比<br/>
                 ${name}: ${value}`;
       },
