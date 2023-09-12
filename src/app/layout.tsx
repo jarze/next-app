@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
 import Particles from '@/components/particles';
@@ -58,6 +59,7 @@ export default function RootLayout({ children, tab }: any) {
 				{tab}
 				<Particles />
 			</body>
+			<Script src='/script/index.js' />
 		</html>
 	);
 }
