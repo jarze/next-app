@@ -46,7 +46,7 @@ export default function Home() {
 					return (
 						<div
 							key={i.title}
-							className={`drop flex items-start ${
+							className={`animate-drop flex items-start ${
 								index % 2 ? 'flex-row' : 'flex-row-reverse'
 							}`}
 							style={{
@@ -61,7 +61,7 @@ export default function Home() {
 							<Link
 								id={loc}
 								href={i.link ? i.url : i.children?.[0]?.url || i.url}
-								className={`peer-[:empty]:hidden transition inline-block px-24 py-4 whitespace-nowrap leading-normal bg-bg-button text-primary border border-primary shadow-inner-primary active:bg-primary active:text-black active:shadow-primary relative animate-pluse-shadow ${
+								className={`peer-[:empty]:opacity-0 transition inline-block px-24 py-4 whitespace-nowrap leading-normal bg-bg-button text-primary border border-primary shadow-inner-primary active:bg-primary active:text-black active:shadow-primary relative animate-pluse-shadow ${
 									pathRelative[loc] || ''
 								}`}
 							>

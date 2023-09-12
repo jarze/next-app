@@ -32,6 +32,7 @@ const config: Config = {
 				'pulse-scale': 'pulse 3s linear infinite,scale 3s linear infinite',
 				'pluse-shadow': 'pluse-shadow 3s linear infinite',
 				'ping-small': 'ping-small 3s linear infinite',
+				drop: 'drop 10s ease-out infinite',
 			},
 			keyframes: {
 				'pluse-shadow': {
@@ -57,6 +58,11 @@ const config: Config = {
 				scale: {
 					'50%': {
 						transform: 'scale(1.1)',
+					},
+				},
+				drop: {
+					'50%': {
+						transform: 'perspective(500px) translate3d(10px, 10px, 10px)',
 					},
 				},
 			},
