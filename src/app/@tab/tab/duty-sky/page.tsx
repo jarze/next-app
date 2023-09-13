@@ -1,14 +1,18 @@
 'use client';
+import { useRef } from 'react';
 import TabCard from '@/components/TabCard';
-import request from '@/utils/request';
+import Video from '@/components/Video';
 
 export default function Page() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const onPlay = () => {
+    videoRef.current?.play();
+  };
   return (
     <div
       data-no-wrapper
-      onClick={() => {
-        request.get('/front/light-on', { baseURL: '/api' });
-      }}
+      onClick={onPlay}
       className="  bg-[url('/duty/bg_duty.png')] h-[898px] w-[3107px] bg-[length:100%_100%] overflow-hidden "
     >
       <TabCard styles="!absolute w-[1201px] h-[464px] px-[30px] py-[40px] right-24 top-1/2 -translate-y-1/2">
@@ -22,6 +26,7 @@ export default function Page() {
           希望有一天，我们再次仰望夜空，还是那曾经的繁星点点。
         </p>
       </TabCard>
+      <Video ref={videoRef} />
     </div>
   );
 }

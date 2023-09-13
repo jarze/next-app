@@ -24,12 +24,15 @@ export const chinaMapConfig = (configData: any) => {
       transitionDuration: 0.2,
       formatter: function (params: any) {
         let { data = {} } = params;
-        let { value = 0, name = '' } = data;
-        return `全国火力发电占比<br/>
-                ${name}: ${value}`;
+        let { value = 0, name = '', total, use } = data;
+        if (value === null) return;
+        return `${name}<br/>
+                  总发电量: ${total}千瓦时<br/>
+                社会用电量: ${use}千瓦时`;
       },
     },
     dataset: {
+      dimensions: ['name', 'value'],
       source: data,
     },
     series: {
