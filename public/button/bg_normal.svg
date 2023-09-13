@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="92px" viewBox="0 0 188 92" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径_73961-2</title>
+    <defs>
+        <path
+            d="M61.3200036,45.7089964 C61.344298,64.7283387 56.6727513,83.4595232 47.7200036,100.239996 L115.227004,139.262996 C147.247614,81.0549675 147.276663,10.5143778 115.304004,-47.7200036 L47.7590036,-8.7490036 C56.685383,8.01362089 61.3430543,26.7178064 61.3200036,45.7089964 Z"
+            id="path-1"></path>
+        <filter x="-9.3%" y="-4.5%" width="118.6%" height="109.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="8" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 1   0 0 0 0 0.933333333  0 0 0 0.5 0" type="matrix"
+                in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="路径_73961-2"
+        transform="translate(93.491500, 45.771496) rotate(270.000000) translate(-93.491500, -45.771496) ">
+        <use fill-opacity="0.519999981" fill="#1D242E" xlink:href="#path-1"></use>
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+    </g>
+</svg>

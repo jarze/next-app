@@ -64,6 +64,7 @@ export default function Home() {
 								className={`peer-[:empty]:opacity-0 transition inline-block px-24 py-4 whitespace-nowrap leading-normal bg-bg-button text-primary border border-primary shadow-inner-primary active:bg-primary active:text-black active:shadow-primary relative animate-pluse-shadow ${
 									pathRelative[loc] || ''
 								}`}
+								prefetch
 							>
 								<Image
 									src={'/button/corner.svg'}

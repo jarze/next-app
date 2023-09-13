@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
 import Particles from '@/components/particles';
+import QuickLinks from '@/components/QuickLinks';
 // import { Inter } from 'next/font/google';
 
 // const inter = Inter({ subsets: ['latin'] });
@@ -57,6 +58,7 @@ export default function RootLayout({ children, tab }: any) {
 				/>
 				{children}
 				{tab}
+				<QuickLinks />
 				<Particles />
 			</body>
 			<Script src='/script/index.js' />
