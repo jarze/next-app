@@ -8,8 +8,6 @@ export type TPanelProp = {
 
 export default function TabItem({ children, tabKey }: TPanelProp): JSX.Element {
   const tabCtx = useContext(TabsContext);
-  console.log('ssss', tabCtx);
-
   return (
     <div
       className={

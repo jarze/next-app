@@ -20,7 +20,7 @@ export default function Tabs({
 
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-row justify-end">
         <TabsContext.Provider value={{ activeKey, onChange }}>
           {children.map((m) => {
             return (

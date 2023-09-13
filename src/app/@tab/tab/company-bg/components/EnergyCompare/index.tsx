@@ -8,7 +8,7 @@ import { resData } from './data';
 
 export default function GeogMap() {
   const echartsRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState<null | 'small' | 'big'>(null);
+  const [visible, setVisible] = useState<null | 'small' | 'big'>('small');
   let mapInstance: any = null;
 
   const renderMap = () => {
@@ -26,6 +26,7 @@ export default function GeogMap() {
             return {
               name,
               value: value === null ? null : value.total > value.use ? 1 : 0,
+              ...value,
             };
           }),
           max: 1,
@@ -57,29 +58,40 @@ export default function GeogMap() {
           <div className="flex">
             <div
               onClick={() => {
-                setVisible('big');
+                if (visible === 'big') {
+                  setVisible(null);
+                } else {
+                  setVisible('big');
+                }
               }}
-              className="w-[176px] h-[65px] leading-[65px] text-center bg-[#89FF00]"
+              className={`w-[176px] h-[65px] leading-[65px] text-center ${
+                visible === 'big'
+                  ? 'text-[#030322] bg-[#89FF00]'
+                  : 'shadow-[inset_0_0_32px_1px_#89FF00]'
+              }`}
             >
               供大于求
             </div>
             <div
               onClick={() => {
-                setVisible('small');
+                if (visible === 'small') {
+                  setVisible(null);
+                } else {
+                  setVisible('small');
+                }
               }}
-              className="ml-10 w-[176px] h-[65px] leading-[65px] text-center shadow-inner-primary"
+              className={`ml-10 w-[176px] h-[65px] leading-[65px] text-center ${
+                visible === 'small'
+                  ? 'text-[#030322] bg-primary'
+                  : 'shadow-[inset_0_0_32px_1px_#00FFEE]'
+              }`}
             >
               供小于求
             </div>
           </div>
           <div className="relative">
             {visible === 'big' && (
-              <div
-                onClick={() => {
-                  setVisible(null);
-                }}
-                className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-[#89FF00] border z-10 bg-[#141A25] text-xs leading-3 py-2"
-              >
+              <div className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-[#89FF00] border z-10 bg-[#141A25] text-xs leading-3 py-2">
                 <div className="flex w-full px-4 py-1">
                   <div className="flex flex-1">省市</div>
                   <div className="flex flex-[2] justify-end">
@@ -113,7 +125,7 @@ export default function GeogMap() {
                 onClick={() => {
                   setVisible(null);
                 }}
-                className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-[#89FF00] border z-10 bg-[#141A25] text-xs leading-3 py-2"
+                className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-primary border z-10 bg-[#141A25] text-xs leading-3 py-2"
               >
                 <div className="flex w-full px-4 py-1">
                   <div className="flex flex-1">省市</div>
