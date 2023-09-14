@@ -13,6 +13,6 @@
   background: transparent url(/button/bg_normal.svg) no-repeat center center / 188px auto;
 }
 
-.radial-btn:active {
+.radial-btn:active,.radial-btn[data-active=true] {
   background:transparent url(/button/bg_active.svg) no-repeat center center / 244px auto;
 }
