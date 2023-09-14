@@ -38,6 +38,18 @@ const list = [
     width: 369,
     height: 276,
   },
+  {
+    src: '/honor/certificate_6.png',
+    key: '高新技术企业',
+    width: 369,
+    height: 276,
+  },
+  {
+    src: '/honor/certificate_6.png',
+    key: '高新技术企业',
+    width: 369,
+    height: 276,
+  },
 ];
 
 const institutions = [
@@ -56,13 +68,13 @@ const institutions = [
 
 export default function Page() {
   return (
-    <div className="flex h-full items-center justify-center">
-      <div className='flex'>
+    <div className="!absolute -left-[50px] flex h-full items-center">
+      <div className='flex w-[2500px] overflow-x-auto'>
         {list.map((m) => {
           return (
             <div
               key={m.key}
-              className="flex flex-col w-[396px] h-[652px] border border-primary ml-6"
+              className="flex flex-none flex-col w-[396px] h-[652px] border border-primary mr-6"
             >
               <div className="flex flex-1 justify-center items-center">
                 <Image src={m.src} width={m.width} height={m.height} alt={''} />
@@ -77,7 +89,7 @@ export default function Page() {
         })}
       </div>
 
-      <TabCard styles="w-[471px] h-[646px] pt-16">
+      <TabCard styles="w-[471px] h-[646px] pt-16 ml-5">
         {institutions.map((m) => {
           return (
             <div key={m} className="flex px-5 text-lg mt-4">
