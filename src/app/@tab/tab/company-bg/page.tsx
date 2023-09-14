@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
-import Policy from './components/Policy';
 import Tabs from '@/components/Tabs';
 import GenerateBackground from './components/GenerateBackground';
+import Reform from './components/Reform';
+import Policy from './components/Policy';
 
 export default function Page() {
   const [value, setValue] = useState('1');
@@ -17,6 +18,9 @@ export default function Page() {
       </Tabs.Panel>
       <Tabs.Panel tabKey="2" tab={'发电侧结构背景'}>
         <GenerateBackground />
+      </Tabs.Panel>
+      <Tabs.Panel tabKey="3" tab={'电改背景'}>
+        <Reform />
       </Tabs.Panel>
     </Tabs>
   );
