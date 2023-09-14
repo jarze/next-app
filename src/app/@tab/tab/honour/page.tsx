@@ -57,6 +57,26 @@ const institutions = [
 export default function Page() {
   return (
     <div className="flex h-full items-center justify-center">
+      <div className='flex'>
+        {list.map((m) => {
+          return (
+            <div
+              key={m.key}
+              className="flex flex-col w-[396px] h-[652px] border border-primary ml-6"
+            >
+              <div className="flex flex-1 justify-center items-center">
+                <Image src={m.src} width={m.width} height={m.height} alt={''} />
+              </div>
+              <div className="flex h-[110px] justify-center items-center">
+                <span className="text-primary inline-block w-3/4 text-center">
+                  {m.key}
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
       <TabCard styles="w-[471px] h-[646px] pt-16">
         {institutions.map((m) => {
           return (
@@ -73,23 +93,6 @@ export default function Page() {
           );
         })}
       </TabCard>
-      {list.map((m) => {
-        return (
-          <div
-            key={m.key}
-            className="flex flex-col w-[396px] h-[652px] border border-primary ml-6"
-          >
-            <div className="flex flex-1 justify-center items-center">
-              <Image src={m.src} width={m.width} height={m.height} alt={''} />
-            </div>
-            <div className="flex h-[110px] justify-center items-center">
-              <span className="text-primary inline-block w-3/4 text-center">
-                {m.key}
-              </span>
-            </div>
-          </div>
-        );
-      })}
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 export default function Page() {
   const router = useRouter();
   return (
-    <div data-w-auto className="flex">
+    <div data-w-auto className="flex w-[1800px]">
       <div className="flex flex-col font-bold text-5xl leading-[60px]">
         <span>万益能源创始人&CEO</span>
         <span>李媛霞</span>
