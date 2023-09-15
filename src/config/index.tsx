@@ -14,7 +14,7 @@ export const routes = [
 		link: true,
 		children: [
 			{ title: '电力交易', url: '/tab/business-ele' },
-			{ title: '碳交易', url: '/tab/business-carbon' },
+			{ title: '碳业务', url: '/tab/business-carbon' },
 			{ title: '智能制造', url: '/tab/business-intelligent-manufacturing' },
 			{ title: '全国布局', url: '/tab/business-layout' },
 		],

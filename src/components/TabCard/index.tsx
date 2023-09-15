@@ -7,7 +7,7 @@ export default function TabCard(props: TabCardProps) {
   const { title, children, styles } = props;
   return (
     <div
-      className={`w-[1083px] border-primary border relative ${styles}`}
+      className={`w-[1083px] border-primary border relative bg-[#141A25] ${styles}`}
     >
       <div className="w-[196px] h-1 bg-primary absolute left-0 -top-1" />
       <div className=" w-0 h-0 absolute right-0 top-1 border-b-[16px] border-r-[16px] border-l-[16px] border-transparent border-b-primary rotate-45" />

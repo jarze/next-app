@@ -18,11 +18,11 @@ export default function Page() {
           isCache={true}
           onChange={(value) => setValue(value)}
         >
-          <Tabs.Panel tabKey="1" tab={'万益能源'}>
-            <Introduction />
-          </Tabs.Panel>
-          <Tabs.Panel tabKey="2" tab={'使命愿景'}>
+          <Tabs.Panel tabKey="1" tab={'使命愿景'}>
             <Vision />
+          </Tabs.Panel>
+          <Tabs.Panel tabKey="2" tab={'万益能源'}>
+            <Introduction />
           </Tabs.Panel>
         </Tabs>
       </div>

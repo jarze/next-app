@@ -5,7 +5,7 @@ import TabCard from '@/components/TabCard';
 export default function Policy() {
   return (
     <div className="flex flex-row">
-      <TabCard styles="flex flex-row w-[2907px] h-[578px]">
+      <TabCard styles="flex flex-row w-[2907px] h-[578px] !bg-transparent">
         <div className="flex h-full w-[810px] p-[47px] flex-wrap justify-between">
           <div className="flex flex-col h-full justify-between">
             <Image
