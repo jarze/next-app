@@ -8,7 +8,7 @@ export default function Home() {
   const [value, setValue] = useState('1');
   return (
     <div className="flex h-full items-center">
-      <div className="flex ml-[240px] items-center">
+      <div className="flex ml-[340px] items-center">
         <div className=" flex flex-col  mt-24">
           <Link href={'/tab/company-wy/hy'}>
             <Image

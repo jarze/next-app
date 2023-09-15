@@ -13,14 +13,14 @@ export default function Page() {
       isCache={true}
       onChange={(value) => setValue(value)}
     >
-      <Tabs.Panel tabKey="1" tab={'政策背景'}>
-        <Policy />
-      </Tabs.Panel>
-      <Tabs.Panel tabKey="2" tab={'发电侧结构背景'}>
+      <Tabs.Panel tabKey="1" tab={'发电侧结构背景'}>
         <GenerateBackground />
       </Tabs.Panel>
-      <Tabs.Panel tabKey="3" tab={'电改背景'}>
+      <Tabs.Panel tabKey="2" tab={'电改背景'}>
         <Reform />
+      </Tabs.Panel>
+      <Tabs.Panel tabKey="3" tab={'政策背景'}>
+        <Policy />
       </Tabs.Panel>
     </Tabs>
   );

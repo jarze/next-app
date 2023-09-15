@@ -5,7 +5,7 @@ import GeogMap from './GeogMap';
 
 export default function GenerateBackground() {
   return (
-    <div className='flex overflow-x-auto'>
+    <div className='flex overflow-x-auto overflow-y-hidden'>
       <BarChart />
       <GeogMap />
       <EnergyCompare />
