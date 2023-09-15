@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Particles from '@/components/particles';
 import QuickLinks from '@/components/QuickLinks';
+import { VideoProvider } from '@/components/Video/context';
 // import { Inter } from 'next/font/google';
 
 // const inter = Inter({ subsets: ['latin'] });
@@ -29,36 +30,38 @@ export default function RootLayout({ children, tab }: any) {
 	return (
 		<html lang='en'>
 			<body>
-				<Link
-					href={'/home'}
-					replace
-					className='absolute left-16 top-16 z-[1] block w-[443px] h-[141px]'
-				>
+				<VideoProvider>
+					<Link
+						href={'/home'}
+						replace
+						className='absolute left-16 top-16 z-[1] block w-[443px] h-[141px]'
+					>
+						<Image
+							src='/logo.svg'
+							alt='万益能源'
+							width={443}
+							height={141}
+							// className='absolute left-16 top-16 z-1'
+						/>
+					</Link>
 					<Image
-						src='/logo.svg'
-						alt='万益能源'
+						src='/bg_lb.svg'
+						alt=''
 						width={443}
 						height={141}
-						// className='absolute left-16 top-16 z-1'
+						className='absolute left-16 bottom-16 -z-10'
 					/>
-				</Link>
-				<Image
-					src='/bg_lb.svg'
-					alt=''
-					width={443}
-					height={141}
-					className='absolute left-16 bottom-16 -z-10'
-				/>
-				<Image
-					src='/bg_lb.svg'
-					alt=''
-					width={443}
-					height={141}
-					className='absolute right-16 top-16 -z-10 rotate-180'
-				/>
-				{children}
-				{tab}
-				<QuickLinks />
+					<Image
+						src='/bg_lb.svg'
+						alt=''
+						width={443}
+						height={141}
+						className='absolute right-16 top-16 -z-10 rotate-180'
+					/>
+					{children}
+					{tab}
+					<QuickLinks />
+				</VideoProvider>
 				<Particles />
 			</body>
 			<Script src='/script/index.js' />

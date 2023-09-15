@@ -38,7 +38,7 @@ export default function Links() {
 
 	return (
 		<div
-			className='z-30 absolute right-80 bottom-1/3 w-[388px] h-[388px] radial-wrapper text-lg transition'
+			className='z-20 absolute right-80 bottom-1/3 w-[388px] h-[388px] radial-wrapper text-lg transition'
 			style={{ transform: `rotate(${60 * activeSorter}deg)` }}
 		>
 			<div

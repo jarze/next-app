@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { routes as data } from '@/config';
 import Svg from '@/components/rsvg';
+import { VideoPlay } from '@/components/Video/context';
 
 const pathRelative: any = {
 	l_1: 'left-[425px] top-9',
@@ -15,32 +16,34 @@ const pathRelative: any = {
 export default function Home() {
 	return (
 		<main className='relative h-screen flex items-center justify-center text-[56px]'>
-			<div className='absolute h-[1080px] w-[1220px] flex flex-col justify-center items-center z-[-1]'>
+			<div className='absolute h-[1080px] w-[1220px] flex flex-col justify-center items-center'>
 				<Svg
 					src='/main/circle.svg'
 					alt=''
 					width={508}
 					height={519}
-					className='absolute mt-[-170px] ml-[-340px] z-10 mask-start'
+					className='absolute mt-[-170px] ml-[-340px] z-1 mask-start pointer-events-none'
 				/>
-				<Image
-					className='dark:drop-shadow-[0_0_0.3rem_#ffffff70] relative top-10'
-					src='/IP.svg'
-					alt='小益 IP'
-					width={330}
-					height={450}
-					priority
-				/>
+				<VideoPlay>
+					<Image
+						className='dark:drop-shadow-[0_0_0.3rem_#ffffff70] relative top-10 active:scale-95'
+						src='/IP.svg'
+						alt='小益 IP'
+						width={330}
+						height={450}
+						priority
+					/>
+				</VideoPlay>
 				<Image
 					src='/bottom.png'
 					alt='小益'
 					width={1213}
 					height={1080}
-					className='absolute bottom-0 h-[1080px] z-[-1] animate-pulse-slow'
+					className='absolute bottom-0 h-[1080px] z-[-1] animate-pulse-slow pointer-events-none'
 					priority
 				/>
 			</div>
-			<div className='h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14'>
+			<div className='h-3/4 z-10 grid grid-cols-2 gap-x-96 gap-y-14 pointer-events-none'>
 				{data.map((i, index) => {
 					const loc = `${index % 2 ? 'r' : 'l'}_${Math.ceil((index + 1) / 2)}`;
 					return (
@@ -63,7 +66,7 @@ export default function Home() {
 								href={i.link ? i.url : i.children?.[0]?.url || i.url}
 								className={`peer-[:empty]:opacity-0 transition inline-block px-24 py-4 whitespace-nowrap leading-normal bg-bg-button text-primary border border-primary shadow-inner-primary active:bg-primary active:text-black active:shadow-primary relative animate-pluse-shadow ${
 									pathRelative[loc] || ''
-								}`}
+								} pointer-events-auto`}
 								prefetch
 							>
 								<Image
