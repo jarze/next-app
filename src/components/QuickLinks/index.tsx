@@ -10,7 +10,7 @@ const sortArray = (arr: Array<number>) => {
 	const len = arr.length;
 	const mid = Math.floor(len / 2);
 	const part1 = arr.slice(0, mid);
-	const part2 = arr.slice(mid).reverse();
+	const part2 = arr.slice(mid);
 
 	const result: number[] = [];
 
