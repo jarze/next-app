@@ -13,7 +13,7 @@ export default function Page() {
     <div
       data-no-wrapper
       onClick={onPlay}
-      className="  bg-[url('/duty/bg_duty.png')] h-[898px] w-[3107px] bg-[length:100%_100%] overflow-hidden "
+      className="bg-[url('/duty/bg_duty.png')] h-[898px] w-[3107px] bg-[length:100%_100%] overflow-hidden "
     >
       <TabCard styles="!absolute w-[1201px] h-[464px] px-[30px] py-[40px] right-24 top-1/2 -translate-y-1/2">
         <span className="font-bold text-[32px]">万益能源星空计划</span>

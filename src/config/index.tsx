@@ -11,8 +11,11 @@ export const routes = [
 	{
 		title: '业务布局',
 		url: '/tab/business',
+		link: true,
 		children: [
-			{ title: '业务介绍', url: '/tab/business-introduce' },
+			{ title: '电力交易', url: '/tab/business-ele' },
+			{ title: '碳交易', url: '/tab/business-carbon' },
+			{ title: '智能制造', url: '/tab/business-intelligent-manufacturing' },
 			{ title: '全国布局', url: '/tab/business-layout' },
 		],
 	},
