@@ -29,7 +29,7 @@ export default function GeogMap() {
     currentIndex.current = 0;
     timer.current = setInterval(() => {
       currentIndex.current++;
-      if (currentIndex.current > 2) {
+      if (currentIndex.current > 3) {
         currentIndex.current = 0;
       }
       loop();
