@@ -1,7 +1,59 @@
-import TabCard from '@/components/TabCard';
+'use client';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+
+const photoList = [
+  '/duty/photo_1.png',
+  '/duty/photo_2.png',
+  '/duty/photo_3.png',
+  '/duty/photo_4.png',
+  '/duty/photo_5.png',
+  '/duty/photo_6.jpg',
+  '/duty/photo_7.jpg',
+  '/duty/photo_8.jpg',
+  '/duty/photo_9.jpg',
+  '/duty/photo_10.jpg',
+  '/duty/photo_11.png',
+  '/duty/photo_12.png',
+];
+const order = [[1, 2], [3, 5], [4]];
 
 export default function Page() {
+  const [currentImageList, setCurrentImageList] = useState([
+    '/duty/photo_1.png',
+    '/duty/photo_2.png',
+    '/duty/photo_3.png',
+    '/duty/photo_4.png',
+    '/duty/photo_5.png',
+  ]);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount((value) => {
+        let newvalue = value + 1;
+        newvalue = newvalue > 2 ? 0 : newvalue;
+        const newOrder = order[newvalue];
+        setCurrentImageList((list) => {
+          newOrder.forEach((m) => {
+            let index = Math.floor(Math.random() * 12);
+            console.log('list');
+
+            while (list.includes(photoList[index])) {
+              index = Math.floor(Math.random() * 12);
+            }
+            list[m] = photoList[index];
+          });
+          return [...list];
+        });
+        return newvalue;
+      });
+    }, 3000);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="relative flex justify-center items-center h-full w-full">
       <div className="flex flex-row">
@@ -13,8 +65,10 @@ export default function Page() {
               </span>
             </div>
             <Image
-              className="ml-6"
-              src={'/duty/photo_1.png'}
+              className={`ml-6 h-[346px] ${
+                order[count].includes(1) ? 'animate-pluse-in-out' : ''
+              } `}
+              src={currentImageList[0]}
               width={495}
               height={346}
               alt={''}
@@ -22,21 +76,28 @@ export default function Page() {
           </div>
           <div className="flex flex-row mt-6">
             <Image
-              src={'/duty/photo_2.png'}
+              className={`h-[346px] ${
+                order[count].includes(2) ? 'animate-pluse-in-out' : ''
+              } `}
+              src={currentImageList[1]}
               width={495}
               height={346}
               alt={''}
             />
             <Image
-              className="ml-6"
-              src={'/duty/photo_3.png'}
+              className={`ml-6 h-[346px] ${
+                order[count].includes(3) ? 'animate-pluse-in-out' : ''
+              } `}
+              src={currentImageList[2]}
               width={495}
               height={346}
               alt={''}
             />
             <Image
-              className="ml-6"
-              src={'/duty/photo_4.png'}
+              className={`ml-6 h-[346px] ${
+                order[count].includes(4) ? 'animate-pluse-in-out' : ''
+              } `}
+              src={currentImageList[3]}
               width={495}
               height={346}
               alt={''}
@@ -44,8 +105,10 @@ export default function Page() {
           </div>
         </div>
         <Image
-          className="ml-6"
-          src={'/duty/photo_5.png'}
+          className={`ml-6 h-[707px] ${
+            order[count].includes(5) ? 'animate-pluse-in-out' : ''
+          } `}
+          src={currentImageList[4]}
           width={1154}
           height={707}
           alt={''}

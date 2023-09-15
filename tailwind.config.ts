@@ -33,6 +33,7 @@ const config: Config = {
 				'pluse-shadow': 'pluse-shadow 3s linear infinite',
 				'ping-small': 'ping-small 3s linear infinite',
 				drop: 'drop 10s ease-out infinite',
+				'pluse-in-out': 'pluse-in-out 5s linear infinite',
 			},
 			keyframes: {
 				'pluse-shadow': {
@@ -65,6 +66,27 @@ const config: Config = {
 						transform: 'perspective(500px) translate3d(10px, 10px, 10px)',
 					},
 				},
+				"pluse-in-out":{
+					'15%':{
+						opacity: '0.75',
+					},
+					'25%':{
+						opacity: '0.55',
+					},
+					'50% ':{
+						opacity: '0.1',
+					},
+					'60% ':{
+						opacity: '0.3',
+					},
+					'75% ':{
+						opacity: '0.55',
+					},
+					'100%':{
+						opacity: '1',
+					}
+
+				}
 			},
 		},
 	},
