@@ -34,18 +34,18 @@ export const chinaMapConfig = (configData: any) => {
         color: '#000',
       },
     },
-    tooltip: {
-      // 提示框
-      trigger: 'item',
-      showDelay: 0,
-      transitionDuration: 0.2,
-      formatter: function (params: any) {
-        let { data = {} } = params;
-        let { value = 0, name = '' } = data;
-        return `全国火力发电占比<br/>
-                ${name}: ${value}`;
-      },
-    },
+    // tooltip: {
+    //   // 提示框
+    //   trigger: 'item',
+    //   showDelay: 0,
+    //   transitionDuration: 0.2,
+    //   formatter: function (params: any) {
+    //     let { data = {} } = params;
+    //     let { value = 0, name = '' } = data;
+    //     return `全国火力发电占比<br/>
+    //             ${name}: ${value}`;
+    //   },
+    // },
     dataset: {
       source: data,
     },

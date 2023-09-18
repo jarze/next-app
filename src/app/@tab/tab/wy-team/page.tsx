@@ -27,13 +27,13 @@ export default function Page() {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[200px] rounded-full bg-primary text-center leading-[200px] font-bold text-[55px] text-[#030322]">
-              10.4%
+              5.2%
             </div>
             <span className="inline-block mt-[20px]">博士</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[200px] rounded-full bg-primary text-center leading-[200px] font-bold text-[55px] text-[#030322]">
-              5.2%
+              10.2%
             </div>
             <span className="inline-block mt-[20px]">海外留学背景</span>
           </div>

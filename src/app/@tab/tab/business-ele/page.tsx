@@ -13,7 +13,17 @@ export default function Page() {
       isCache={true}
       onChange={(value) => setValue(value)}
     >
-      <Tabs.Panel tabKey="1" tab={'跨省跨区绿电交易'}>
+      <Tabs.Panel tabKey="1" tab={'省内电力交易'}>
+        <Image
+          src="/business/ele-province.png"
+          className="h-[710px] ml-[700px] -mt-20"
+          width={1390}
+          height={710}
+          priority
+          alt={''}
+        />
+      </Tabs.Panel>
+      <Tabs.Panel tabKey="2" tab={'跨省跨区绿电交易'}>
         {page === '2' ? (
           <div className="flex -mt-[50px] ml-[250px]">
             <Image
@@ -77,16 +87,6 @@ export default function Page() {
             />
           </div>
         )}
-      </Tabs.Panel>
-      <Tabs.Panel tabKey="2" tab={'省内电力交易'}>
-        <Image
-          src="/business/ele-province.png"
-          className="h-[710px] ml-[700px] -mt-20"
-          width={1390}
-          height={710}
-          priority
-          alt={''}
-        />
       </Tabs.Panel>
     </Tabs>
   );

@@ -23,9 +23,18 @@ export default function Page() {
         }}
         direction={'vertical'}
         spaceBetween={0}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
+        <SwiperSlide>
+          <BubbleSlide />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TabCard styles="w-[1201px] h-[464px] px-[30px] py-[40px] flex justify-center items-center">
+            <div className=" font-bold ">
+              以打造中国<span className=" text-[40px]">最有价值</span>
+              的能源交互、生态、共享平台
+            </div>
+          </TabCard>
+        </SwiperSlide>
         <SwiperSlide>
           <TabCard styles="w-[1201px] h-[464px] px-[30px] py-[40px] ">
             <span className="font-bold text-[32px]">万益能源星空计划</span>
@@ -37,17 +46,6 @@ export default function Page() {
             <p className=" leading-[48px] mt-14 text-2xl">
               希望有一天，我们再次仰望夜空，还是那曾经的繁星点点。
             </p>
-          </TabCard>
-        </SwiperSlide>
-        <SwiperSlide>
-          <BubbleSlide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TabCard styles="w-[1201px] h-[464px] px-[30px] py-[40px] flex justify-center items-center">
-            <div className=" font-bold ">
-              以打造中国<span className=" text-[40px]">最有价值</span>
-              的能源交互、生态、共享平台
-            </div>
           </TabCard>
         </SwiperSlide>
       </Swiper>

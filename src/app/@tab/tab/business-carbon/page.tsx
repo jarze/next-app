@@ -34,17 +34,7 @@ export default function Page() {
       isCache={true}
       onChange={(value) => setValue(value)}
     >
-      <Tabs.Panel tabKey="1" tab={'碳减排项目开发'}>
-        <Image
-          src="/business/carbon-development.png"
-          className="h-[557px] ml-[700px] mt-20"
-          width={1570}
-          height={557}
-          priority
-          alt={''}
-        />
-      </Tabs.Panel>
-      <Tabs.Panel tabKey="2" tab={'碳交易业务'}>
+      <Tabs.Panel tabKey="1" tab={'碳交易'}>
         <div className="flex flex-col items-center mt-[150px]">
           <div className="flex">
             {list.map((m) => {
@@ -64,6 +54,16 @@ export default function Page() {
             远期资源及撮合交易服务。
           </div>
         </div>
+      </Tabs.Panel>
+      <Tabs.Panel tabKey="2" tab={'碳减排项目开发'}>
+        <Image
+          src="/business/carbon-development.png"
+          className="h-[557px] ml-[700px] mt-20"
+          width={1570}
+          height={557}
+          priority
+          alt={''}
+        />
       </Tabs.Panel>
     </Tabs>
   );
