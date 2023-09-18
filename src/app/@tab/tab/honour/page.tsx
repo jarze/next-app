@@ -1,5 +1,6 @@
-import TabCard from '@/components/TabCard';
 import Image from 'next/image';
+import TabCard from '@/components/TabCard';
+import LightenItem from '@/components/lightenItem';
 
 const list = [
   {
@@ -107,7 +108,7 @@ export default function Page() {
       <div className="flex w-[2500px] overflow-x-auto">
         {list.map((m) => {
           return (
-            <div
+            <LightenItem
               key={m.key}
               className="flex flex-none flex-col w-[396px] h-[652px] border border-primary mr-6"
             >
@@ -125,7 +126,7 @@ export default function Page() {
                   {m.key}
                 </span>
               </div>
-            </div>
+            </LightenItem>
           );
         })}
       </div>
