@@ -1,5 +1,6 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 import SwiperCore, { Pagination } from 'swiper';
 import TabCard from '@/components/TabCard';
 import BubbleSlide from './components/BubbleSlide';
@@ -33,6 +34,16 @@ export default function Page() {
               以打造中国<span className=" text-[40px]">最有价值</span>
               的能源交互、生态、共享平台
             </div>
+          </TabCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <TabCard styles="w-[1201px] h-[464px] flex justify-center items-center">
+            <Image
+              src={'/duty/sky_data_change.png'}
+              width={534}
+              height={96}
+              alt={''}
+            />
           </TabCard>
         </SwiperSlide>
         <SwiperSlide>
