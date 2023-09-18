@@ -26,6 +26,8 @@ const config: Config = {
 			boxShadow: {
 				primary: '0px 0px 32px 1px rgb(var(--color-primary-rgb))',
 				'inner-primary': 'inset 0px 0px 16px 1px rgb(var(--color-primary-rgb))',
+				'inner-primary-l':
+					'inset 0px 0px 32px 10px rgb(var(--color-primary-rgb))',
 			},
 			animation: {
 				'pulse-slow': 'pulse 3s linear infinite',
@@ -66,27 +68,26 @@ const config: Config = {
 						transform: 'perspective(500px) translate3d(10px, 10px, 10px)',
 					},
 				},
-				"pluse-in-out":{
-					'15%':{
+				'pluse-in-out': {
+					'15%': {
 						opacity: '0.75',
 					},
-					'25%':{
+					'25%': {
 						opacity: '0.55',
 					},
-					'50% ':{
+					'50% ': {
 						opacity: '0.1',
 					},
-					'60% ':{
+					'60% ': {
 						opacity: '0.3',
 					},
-					'75% ':{
+					'75% ': {
 						opacity: '0.55',
 					},
-					'100%':{
+					'100%': {
 						opacity: '1',
-					}
-
-				}
+					},
+				},
 			},
 		},
 	},

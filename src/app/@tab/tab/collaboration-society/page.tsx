@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import LightenItem from '@/components/lightenItem';
 
 const data = [
 	{
@@ -41,13 +42,19 @@ export default async function Society(params: any) {
 	return (
 		<div className='h-full py-2 flex flex-col flex-wrap justify-between content-start gap-6 overflow-x-auto'>
 			{data?.map?.((i: any) => (
-				<div
+				<LightenItem
 					key={i.title}
-					className='relative text-primary w-max flex flex-col items-center border border-primary bg-bg-img transition-shadow active:shadow-inner-primary'
+					className='group relative text-primary w-[707px] flex flex-col items-center border border-primary overflow-clip'
 				>
-					<Image src={i.icon} width={707} height={327} alt={i.title} />
+					<Image
+						src={i.icon}
+						width={707}
+						height={327}
+						alt={i.title}
+						className='group-[[data-active=true]]:scale-105 transition-transform'
+					/>
 					<span className='absolute bottom-8'>{i.title}</span>
-				</div>
+				</LightenItem>
 			))}
 		</div>
 	);

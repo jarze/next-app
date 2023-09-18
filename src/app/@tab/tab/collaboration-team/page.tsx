@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LightenItem from '@/components/lightenItem';
 
 const data = [
 	[
@@ -83,18 +84,19 @@ export default async function Society({ searchParams }: any) {
 									className='h-full py-2 mb-6 flex flex-col flex-wrap justify-between content-start gap-6 overflow-scroll'
 								>
 									{i?.data?.map?.((j: any, index) => (
-										<div
+										<LightenItem
 											key={j.icon}
 											// id={index ? '' : (i.key as string)}
-											className='relative text-primary w-max flex flex-col items-center border border-primary bg-bg-img transition-shadow active:shadow-inner-primary'
+											className='group relative text-primary w-[707px] flex flex-col items-center border border-primary'
 										>
 											<Image
 												src={j.icon}
 												width={707}
 												height={327}
 												alt={i.title as string}
+												className='group-[[data-active=true]]:scale-105 transition-transform'
 											/>
-										</div>
+										</LightenItem>
 									))}
 								</div>
 							</>
