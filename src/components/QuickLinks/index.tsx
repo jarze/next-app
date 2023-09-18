@@ -58,7 +58,7 @@ export default function Links() {
 							prefetch
 							data-active={path.startsWith(i.url)}
 						>
-							{i.title}
+							<span className='relative z-[1]'>{i.title}</span>
 						</Link>
 					</div>
 				))}

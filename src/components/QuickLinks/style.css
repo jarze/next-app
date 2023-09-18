@@ -13,6 +13,30 @@
   background: transparent url(/button/bg_normal.svg) no-repeat center center / 188px auto;
 }
 
-.radial-btn:active,.radial-btn[data-active=true] {
+/* .radial-btn:active {
   background:transparent url(/button/bg_active.svg) no-repeat center center / 244px auto;
+} */
+
+/* .radial-btn:active,.radial-btn[data-active=true] {
+  background:transparent url(/button/bg_active.svg) no-repeat center center / 244px auto;
+} */
+
+.radial-btn:before {
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  width: 244px;
+  height: 151px;
+  top: 50%;
+  left: 50%;
+  margin-left: -122px;
+  margin-top: -75px;
+  background: no-repeat url(/button/bg_active.svg) center / 100% 100%;
+  transition: ease-out opacity 0.2s;
+}
+
+.radial-btn:active:before, .radial-btn[data-active=true]:before {
+opacity: 1;
 }

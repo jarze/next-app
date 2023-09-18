@@ -22,7 +22,7 @@ export default function Home() {
 					alt=''
 					width={508}
 					height={519}
-					className='absolute mt-[-170px] ml-[-340px] z-1 mask-start pointer-events-none'
+					className='absolute mt-[-170px] ml-[-340px] z-[1] mask-start pointer-events-none'
 				/>
 				<VideoPlay>
 					<Image
