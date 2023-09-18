@@ -13,6 +13,11 @@ const option = {
   tooltip: {
     trigger: 'axis',
     axisPointer: { type: 'none' },
+    backgroundColor: 'rgba(20, 26, 37, 0.60)',
+    borderWidth: 0,
+    textStyle: {
+      color: '#fff',
+    },
   },
   legend: {
     data: ['中国', '美国', '日本'],

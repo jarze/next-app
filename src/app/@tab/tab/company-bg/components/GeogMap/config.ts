@@ -30,6 +30,11 @@ export const chinaMapConfig = (configData: any) => {
       trigger: 'item',
       showDelay: 0,
       transitionDuration: 0.2,
+      backgroundColor: 'rgba(20, 26, 37, 0.60)',
+      borderWidth: 0,
+      textStyle: {
+        color: '#fff',
+      },
       formatter: function (params: any) {
         let { data = {} } = params;
         let { value = 0, name = '' } = data;
