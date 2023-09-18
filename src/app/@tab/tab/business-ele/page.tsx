@@ -23,7 +23,7 @@ export default function Page() {
           alt={''}
         />
       </Tabs.Panel>
-      <Tabs.Panel tabKey="2" tab={'跨省跨区绿电交易'}>
+      <Tabs.Panel tabKey="2" tab={'跨省绿电交易'}>
         {page === '2' ? (
           <div className="flex -mt-[50px] ml-[250px]">
             <Image
