@@ -63,8 +63,7 @@ export default async function Society({ searchParams }: any) {
 				{data.map(({ title, key }: any) => (
 					<Link
 						key={key}
-						// href={{ hash: key }}
-						href={{ query: { link: key }, hash: key }}
+						href={{ query: { link: key } }}
 						className='text-white/40 mr-20 active:text-primary data-[active]:text-primary'
 						replace
 						shallow
@@ -86,7 +85,6 @@ export default async function Society({ searchParams }: any) {
 									{i?.data?.map?.((j: any, index) => (
 										<LightenItem
 											key={j.icon}
-											// id={index ? '' : (i.key as string)}
 											className='group relative text-primary w-[707px] flex flex-col items-center border border-primary'
 										>
 											<Image
