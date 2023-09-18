@@ -28,7 +28,12 @@ export default function Page() {
 			>
 				<h2 className='mb-20 h-[133px] leading-[133px] text-[64px] nav-title'>
 					{routes?.link ? (
-						<Link replace href={routes?.url} className='block' prefetch>
+						<Link
+							replace
+							href={routes?.url}
+							className='block active:text-primary'
+							prefetch
+						>
 							{routes.title}
 						</Link>
 					) : (

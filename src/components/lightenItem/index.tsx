@@ -31,7 +31,9 @@ export default function LightenItem({
 		<div
 			onClick={() => handleClick(!active)}
 			data-active={active}
-			className={`${className} bg-bg-img transition-shadow overflow-clip data-[active=true]:shadow-inner-primary-l`}
+			className={`${
+				className || ''
+			} bg-bg-img transition-shadow overflow-clip data-[active=true]:shadow-inner-primary-l`}
 		>
 			{children}
 		</div>
