@@ -1,0 +1,123 @@
+@keyframes mode1{
+    0% {opacity: 1;background-image:  url('/duty/photo_1.png');}
+    12% {opacity: 1;background-image:   url('/duty/photo_1.png');}
+    15% {opacity: 0;background-image:  url('/duty/photo_1.png');}
+
+    17% {opacity: 0;background-image:  url('/duty/photo_4.png'); }
+    19% {opacity: 0.7;background-image:  url('/duty/photo_4.png') ;}
+    22% {opacity: 1;background-image:    url('/duty/photo_4.png') ;}
+    37% {opacity: 1;background-image:   url('/duty/photo_4.png') ;}
+    40% {opacity: 0;background-image:   url('/duty/photo_4.png'); }
+
+    42% {opacity: 0;background-image:   url('/duty/photo_3.png'); }
+    45% {opacity: 0.7;background-image:   url('/duty/photo_3.png') ;}
+    47% {opacity: 1;background-image:   url('/duty/photo_3.png') ;}
+    62% {opacity: 1;background-image:   url('/duty/photo_3.png');}
+    65% {opacity: 0; background-image:   url('/duty/photo_3.png');}
+
+    67% {opacity: 0;background-image:  url('/duty/photo_4.png');}
+    70% {opacity: 0.7;background-image:  url('/duty/photo_4.png');}
+    72% {opacity: 1;background-image:  url('/duty/photo_4.png'); }
+    87% {opacity: 1;background-image:    url('/duty/photo_4.png') ;}
+    90% {opacity: 0;background-image:   url('/duty/photo_4.png'); }
+
+    92% {opacity: 0;background-image:   url('/duty/photo_1.png') ;}
+    94% {opacity: 0.7;background-image:   url('/duty/photo_1.png'); }
+    97% {opacity: 1;background-image:   url('/duty/photo_1.png'); }
+    100% {opacity: 1;background-image:   url('/duty/photo_1.png'); }
+}
+@keyframes mode2{
+    0% {opacity: 1;background-image:   url('/duty/photo_8.jpg') ;}
+    45% {opacity: 1;background-image:   url('/duty/photo_8.jpg') ;}
+    47% {opacity: 0;background-image:   url('/duty/photo_8.jpg'); }
+
+    50% {opacity: 0;background-image:   url('/duty/photo_6.jpg') ;}
+    52% {opacity: 0.7;background-image:   url('/duty/photo_6.jpg'); }
+    55% {opacity: 1;background-image:   url('/duty/photo_6.jpg'); }
+    87% {opacity: 1;background-image:   url('/duty/photo_6.jpg');}
+
+    89% {opacity: 0;background-image:   url('/duty/photo_8.jpg') ;}
+    91% {opacity: 0.7;background-image:   url('/duty/photo_8.jpg') ;}
+    93% {opacity: 1;background-image:   url('/duty/photo_8.jpg'); }
+    100% {opacity: 1;background-image:   url('/duty/photo_8.jpg') ;}
+}
+
+@keyframes mode3{
+    0% {opacity: 1;background-image:   url('/duty/photo_9.jpg') ;}
+    35% {opacity: 1;background-image:   url('/duty/photo_9.jpg') ;}
+    40% {opacity: 0;background-image:   url('/duty/photo_9.jpg'); }
+
+    42% {opacity: 0;background-image:   url('/duty/photo_9.jpg') ;}
+    45% {opacity: 0.7;background-image:   url('/duty/photo_9.jpg'); }
+    47% {opacity: 1;background-image:   url('/duty/photo_9.jpg'); }
+    62% {opacity: 1;background-image:   url('/duty/photo_9.jpg');}
+    65% {opacity: 0; background-image:   url('/duty/photo_9.jpg');}
+
+    67% {opacity: 0;background-image:  url('/duty/photo_10.jpg');}
+    70% {opacity: 0.7;background-image:  url('/duty/photo_10.jpg');}
+    72% {opacity: 1;background-image:  url('/duty/photo_10.jpg') ;}
+    87% {opacity: 1;background-image:    url('/duty/photo_10.jpg');}
+    90% {opacity: 0;background-image:   url('/duty/photo_10.jpg'); }
+
+    92% {opacity: 0;background-image:   url('/duty/photo_9.jpg') ;}
+    94% {opacity: 0.7;background-image:   url('/duty/photo_9.jpg') ;}
+    97% {opacity: 1;background-image:   url('/duty/photo_9.jpg'); }
+    100% {opacity: 1;background-image:   url('/duty/photo_9.jpg') ;}
+}
+
+@keyframes mode4{
+    0% {opacity: 1;background-image:   url('/duty/photo_11.png') ;}
+    30% {opacity: 1;background-image:   url('/duty/photo_11.png') ;}
+    35% {opacity: 0;background-image:   url('/duty/photo_11.png'); }
+
+    37% {opacity: 0;background-image:   url('/duty/photo_12.png') ;}
+    39% {opacity: 0.7;background-image:   url('/duty/photo_12.png'); }
+    42% {opacity: 1;background-image:   url('/duty/photo_12.png'); }
+    67% {opacity: 1;background-image:  url('/duty/photo_12.png') ;}
+    77% {opacity: 1;background-image:    url('/duty/photo_12.png');}
+    79% {opacity: 0;background-image:   url('/duty/photo_12.png'); }
+
+    81% {opacity: 0;background-image:   url('/duty/photo_11.png') ;}
+    83% {opacity: 0.7;background-image:   url('/duty/photo_11.png') ;}
+    85% {opacity: 1;background-image:   url('/duty/photo_11.png'); }
+    100% {opacity: 1;background-image:   url('/duty/photo_11.png') ;}
+}
+@keyframes mode5{
+    0% {opacity: 1;background-image:   url('/duty/photo_2.png') ;}
+    25% {opacity: 1;background-image:   url('/duty/photo_2.png') ;}
+    30% {opacity: 0;background-image:   url('/duty/photo_2.png'); }
+
+    32% {opacity: 0;background-image:   url('/duty/photo_5.png') ;}
+    38% {opacity: 0.7;background-image:   url('/duty/photo_5.png'); }
+    42% {opacity: 1;background-image:   url('/duty/photo_5.png'); }
+    57% {opacity: 1;background-image:   url('/duty/photo_5.png');}
+    59% {opacity: 0; background-image:   url('/duty/photo_5.png');}
+
+    61% {opacity: 0;background-image:  url('/duty/photo_7.jpg');}
+    64% {opacity: 0.7;background-image:  url('/duty/photo_7.jpg');}
+    67% {opacity: 1;background-image:  url('/duty/photo_7.jpg') ;}
+    87% {opacity: 1;background-image:    url('/duty/photo_7.jpg');}
+    90% {opacity: 0;background-image:   url('/duty/photo_7.jpg'); }
+
+    92% {opacity: 0;background-image:   url('/duty/photo_2.png') ;}
+    94% {opacity: 0.7;background-image:   url('/duty/photo_2.png') ;}
+    97% {opacity: 1;background-image:   url('/duty/photo_2.png'); }
+    100% {opacity: 1;background-image:   url('/duty/photo_2.png') ;}
+}
+
+
+.image1 {
+    animation: mode1 35s linear infinite;
+}
+.image2 {
+    animation: mode2 30s linear infinite;
+}
+.image3 {
+    animation: mode3 20s linear infinite;
+}
+.image4 {
+    animation: mode4 25s linear infinite;
+}
+.image5 {
+    animation: mode5 40s linear infinite;
+}
