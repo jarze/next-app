@@ -23,8 +23,8 @@ export const routes = [
 		title: '合作生态',
 		url: '/tab/collaboration',
 		children: [
-			{ title: '协会/交易机构', url: '/tab/collaboration-society' },
 			{ title: '合作伙伴', url: '/tab/collaboration-team' },
+			{ title: '协会/交易机构', url: '/tab/collaboration-society' },
 		],
 	},
 	{ title: '人才团队', url: '/tab/wy-team' },
