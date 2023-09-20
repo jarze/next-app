@@ -49,39 +49,51 @@ export default function GeogMap() {
   }, []);
   return (
     <>
-      <div
+      {/* <div
         className="absolute -top-[70px] left-[250px]"
         style={{
           width: 1000,
           height: 800,
         }}
         ref={echartsRef}
-      />
-      <div className="ml-[1500px] pt-[130px]">
-        <div className="flex">
-          <Image
-            className="ml-6 h-[44px]"
-            src={'/business/flag_yellow.png'}
-            width={34}
-            height={44}
-            alt={''}
-          />
-          <div className="ml-10">
-            <div className="text-5xl">送端</div>
-            <div className="mt-4">新疆、青海、宁夏、山西、陕西</div>
+      /> */}
+
+      <div className="flex ml-[100px]">
+        <Image
+          className="ml-6"
+          src={'/business/business-layout.gif'}
+          width={900}
+          height={900}
+          alt={''}
+        />
+        <div className="ml-[400px] pt-[130px]">
+          <div className="flex">
+            <Image
+              className="ml-6 mt-2 h-[44px]"
+              src={'/business/flag_yellow.png'}
+              width={34}
+              height={44}
+              alt={''}
+            />
+            <div className="ml-10">
+              <div className="text-6xl">送端</div>
+              <div className="mt-4 text-5xl">新疆、青海、宁夏、山西、陕西</div>
+            </div>
           </div>
-        </div>
-        <div className="flex mt-[150px]">
-          <Image
-            className="ml-6 h-[44px]"
-            src={'/business/flag_red.png'}
-            width={34}
-            height={44}
-            alt={''}
-          />
-          <div className="ml-10">
-            <div className="text-5xl">受端</div>
-            <div className="mt-4">四川(点对点、点对网)、重庆、江苏、浙江、上海、河南、湖北  </div>
+          <div className="flex mt-[150px]">
+            <Image
+              className="ml-6  mt-2  h-[44px]"
+              src={'/business/flag_red.png'}
+              width={34}
+              height={44}
+              alt={''}
+            />
+            <div className="ml-10">
+              <div className="text-6xl">受端</div>
+              <div className="mt-4 text-5xl">
+                四川(点对点、点对网)、重庆、江苏、浙江、上海、河南、湖北
+              </div>
+            </div>
           </div>
         </div>
       </div>

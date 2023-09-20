@@ -3,7 +3,7 @@ import Bubble from './Bubble';
 
 export default function BubbleSlide() {
   return (
-    <TabCard styles="w-[1201px] h-[464px] px-[30px] py-[40px] ">
+    <TabCard styles="w-[1546px] h-[606px]  px-[30px] py-[40px] ">
       <Bubble className="w-[97px] h-[97px] top-[70px] left-[233px]">
         <div className=" text-xl">电力</div>
         <div className=" text-xl">大数据</div>
