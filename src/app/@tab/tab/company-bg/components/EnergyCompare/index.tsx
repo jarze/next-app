@@ -64,7 +64,7 @@ export default function GeogMap() {
                   setVisible('big');
                 }
               }}
-              className={`w-[176px] h-[65px] leading-[65px] text-center ${
+              className={`w-[156px] h-[65px] leading-[65px] text-center ${
                 visible === 'big'
                   ? 'text-[#030322] bg-[#89FF00]'
                   : 'shadow-[inset_0_0_32px_1px_#89FF00]'
@@ -80,7 +80,7 @@ export default function GeogMap() {
                   setVisible('small');
                 }
               }}
-              className={`ml-10 w-[176px] h-[65px] leading-[65px] text-center ${
+              className={`ml-10 w-[156px] h-[65px] leading-[65px] text-center ${
                 visible === 'small'
                   ? 'text-[#030322] bg-primary'
                   : 'shadow-[inset_0_0_32px_1px_#00FFEE]'
@@ -91,33 +91,37 @@ export default function GeogMap() {
           </div>
           <div className="relative">
             {visible === 'big' && (
-              <div className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-[#89FF00] border z-10 bg-[#141A25] text-xs leading-3 py-2">
+              <div className="absolute top-0 left-0 w-[350px] h-[331px] border-[#89FF00] border z-10 bg-[#141A25]  text-base leading-3 py-2">
                 <div className="flex w-full px-4 py-1">
                   <div className="flex flex-1">省市</div>
-                  <div className="flex flex-[2] justify-end">
-                    总发电量(亿千瓦时)
+                  <div className="flex flex-col flex-[2] items-end leading-5 justify-center">
+                    <p>总发电量</p>
+                    <p>(亿千瓦时)</p>
                   </div>
-                  <div className="flex flex-[2] justify-end">
-                    全社会用电量(亿千瓦时)
+                  <div className="flex flex-col flex-[2] items-end leading-5">
+                    <p>全社会用电量</p>
+                    <p>(亿千瓦时)</p>
                   </div>
                 </div>
-                {resData
-                  .filter(
-                    (m) => m.value !== null && m.value.total > m.value.use,
-                  )
-                  .map((m) => {
-                    return (
-                      <div key={m.name} className="flex w-full px-4 py-1">
-                        <div className="flex flex-1">{m.label || m.name}</div>
-                        <div className="flex flex-[2] justify-end">
-                          {m.value?.total}
+                <div className="overflow-y-auto h-[260px]">
+                  {resData
+                    .filter(
+                      (m) => m.value !== null && m.value.total > m.value.use,
+                    )
+                    .map((m) => {
+                      return (
+                        <div key={m.name} className="flex w-full px-4 py-1">
+                          <div className="flex flex-1">{m.name}</div>
+                          <div className="flex flex-[2] justify-end">
+                            {m.value?.total}
+                          </div>
+                          <div className="flex flex-[2] justify-end">
+                            {m.value?.use}
+                          </div>
                         </div>
-                        <div className="flex flex-[2] justify-end">
-                          {m.value?.use}
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                </div>
               </div>
             )}
             {visible === 'small' && (
@@ -125,34 +129,38 @@ export default function GeogMap() {
                 onClick={() => {
                   setVisible(null);
                 }}
-                className="overflow-y-auto absolute top-0 left-0 w-[499px] h-[331px] border-primary border z-10 bg-[#141A25] text-xs leading-3 py-2"
+                className="absolute top-0 left-0 w-[350px] h-[331px] border-primary border z-10 bg-[#141A25] text-base leading-3 py-2"
               >
                 <div className="flex w-full px-4 py-1">
                   <div className="flex flex-1">省市</div>
-                  <div className="flex flex-[2] justify-end">
-                    总发电量(亿千瓦时)
+                  <div className="flex flex-col flex-[2] items-end leading-5 justify-center">
+                    <p>总发电量</p>
+                    <p>(亿千瓦时)</p>
                   </div>
-                  <div className="flex flex-[2] justify-end">
-                    全社会用电量(亿千瓦时)
+                  <div className="flex flex-col flex-[2] items-end leading-5">
+                    <p>全社会用电量</p>
+                    <p>(亿千瓦时)</p>
                   </div>
                 </div>
-                {resData
-                  .filter(
-                    (m) => m.value !== null && m.value.total <= m.value.use,
-                  )
-                  .map((m) => {
-                    return (
-                      <div key={m.name} className="flex w-full px-4 py-1">
-                        <div className="flex flex-1">{m.label || m.name}</div>
-                        <div className="flex flex-[2] justify-end">
-                          {m.value?.total}
+                <div className="overflow-y-auto h-[260px]">
+                  {resData
+                    .filter(
+                      (m) => m.value !== null && m.value.total <= m.value.use,
+                    )
+                    .map((m) => {
+                      return (
+                        <div key={m.name} className="flex w-full px-4 py-1">
+                          <div className="flex flex-1">{m.label || m.name}</div>
+                          <div className="flex flex-[2] justify-end ">
+                            {m.value?.total}
+                          </div>
+                          <div className="flex flex-[2] justify-end">
+                            {m.value?.use}
+                          </div>
                         </div>
-                        <div className="flex flex-[2] justify-end">
-                          {m.value?.use}
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                </div>
               </div>
             )}
           </div>
